@@ -7,6 +7,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
+    margin: 24px 93px 25px 215px;
     }
 
 .logo-color {
@@ -15,43 +16,29 @@
 
 .header-navigation {
     display: flex;
-    width: 1600px;
-    height: 80px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.header-logo {
-    padding-left: 215px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-right: 93px;
-}
-    
 .header-list {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-right: 335px;
+    margin: 32px 335px 32px 93px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-.header-item {
-width: 72px;
-height: 16px;
+.header-item:first-child {
+    padding-right: 54px;
 }
 
-.header-link:first-child {
-padding-left: 93px;
-}
-
-.header-link:last-child {
-    padding-right: 335px;
+.header-item:last-child {
+    padding-left: 54px;
 }
 
 .header-list-contacts {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin: 24px 50px 25px 215px;
 }
 
 .header-item-email {
@@ -62,24 +49,17 @@ padding-left: 93px;
 .header-item-contacts {
     padding-top: 24px;
     padding-bottom: 25px;
-    padding-right: 215px;
     padding-left: 50px;
 }
 
-
-
-
-
-
-
-    .header-link {
+.header-link {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    }
+}
     .header-email {
     font-family: 'Roboto';
     font-weight: 500;
@@ -87,7 +67,7 @@ padding-left: 93px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    }
+}
     .header-contacts {
     font-family: 'Roboto';
     font-weight: 500;
@@ -95,22 +75,25 @@ padding-left: 93px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    }
+}
     
-    .header-link:hover {
+.header-link:hover {
     color: #03A9F4;
-    }
-    .header-email:hover {
+}
+.header-email:hover {
     color: #03A9F4;
-    }
-    .header-contacts:hover {
+}
+.header-contacts:hover {
     color: #03A9F4;
-    }
+}
 
 /* секція меін */
 
-.benefits-list {
-    display: flex;
+.hero-section {
+    background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-title {
@@ -121,6 +104,8 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+color: white;
+padding-top:200px;
 }
 
 .hero-button {
@@ -128,23 +113,43 @@ text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87; 
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #03A9F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 10px 24px 10px 24px;
 }
 
 .benefits-title {
     font-family: 'Roboto';
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
 }
+
+.benefits-list {
+    display: flex;
+    margin-top: 94px;
+}
+
+.benefits-item {
+    padding-left: 30px;
+}
+
+.benefits-item:first-child {
+    padding-left: 215px;
+}
+
+.benefits-item:last-child {
+    padding-right: 214px;
+}
+
 .benefits-text {
 font-family: 'Roboto';
 font-weight: 400;
@@ -162,48 +167,97 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
+}
+
+.work-section {
+    margin: 94px 215px 94px 215px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .work-list {
     display: flex;
 }
 
+.work-item:first-child {
+    padding-right: 30px;
+}
+
+.work-item:last-child {
+    padding-left: 30px;
+}
+
 .work-img {
-background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-mix-blend-mode: normal;
+    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+    mix-blend-mode: normal;
+}
+
+.team-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin: 94px 668px 50px 668px;
 }
 
 .team-list {
     display: flex;
 }
 
+.team-item {
+    justify-content: space-around;
+    align-items: center;
+}
+
 .team-img {
     background: url(4853.jpg);
-border-radius: 0px;
+    width: 270px;
+    height: 260px;
+    border-radius: 0px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.team-img:first-child {
+    padding-left: 215px;
+}
+
+.team-img:last-child {
+    padding-right: 215px;
 }
 
 .team-name {
     font-family: 'Roboto';
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .team-text {
     font-family: 'Roboto';
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: #757575;
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 /* секція футер */
+
+.footer-section {
+    background-color: #2F303A;
+}
 
 .footer-logo {
     font-family: 'Raleway';
@@ -211,15 +265,25 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: white;
+margin: 60px 1240px 20px 215px;
 }
 
-.footer-link {
+.logo-color {
+    color: #2196F3;
+}
+
+.footer-info {
+    margin: 0 1154px 0 215px;
+}
+
+.address-link {
     font-family: 'Roboto';
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+color: white;
 }
 
 .footer-email {
@@ -228,6 +292,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-contacts {
@@ -236,4 +301,5 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
