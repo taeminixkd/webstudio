@@ -7,7 +7,8 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
-    margin: 24px 93px 25px 215px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     }
 
 .logo-color {
@@ -142,13 +143,13 @@ padding-top:200px;
     padding-left: 30px;
 }
 
-.benefits-item:first-child {
+/* .benefits-item:first-child {
     padding-left: 215px;
 }
 
 .benefits-item:last-child {
     padding-right: 214px;
-}
+} */
 
 .benefits-text {
 font-family: 'Roboto';
@@ -171,7 +172,8 @@ margin-bottom: 50px;
 }
 
 .work-section {
-    margin: 94px 215px 94px 215px;
+    margin-top: 94px;
+    margin-bottom: 94px;
     justify-content: space-around;
     align-items: center;
 }
@@ -194,7 +196,7 @@ margin-bottom: 50px;
 }
 
 .team-section {
-    padding-left: 215px;
+    /* padding-left: 215px; */
     padding-bottom: 94px;
 }
 
@@ -227,9 +229,9 @@ margin-bottom: 50px;
     padding-bottom: 30px;
 }
 
-.team-img:last-child {
+/* .team-img:last-child {
     padding-right: 215px;
-}
+} */
 
 .team-name {
     font-family: 'Roboto';
@@ -283,16 +285,16 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: white;
 margin-bottom: 20px;
-margin-left: 215px;
+/* margin-left: 215px; */
 }
 
 .logo-color {
     color: #2196F3;
 }
 
-.footer-info {
+/* .footer-info {
     margin-left: 215px;
-}
+} */
 
 .footer-item {
     padding-top: 9px;
@@ -330,4 +332,3 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-
