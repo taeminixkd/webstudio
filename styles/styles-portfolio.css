@@ -6,7 +6,8 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
-    margin: 24px 93px 25px 215px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     }
 
 .logo-color {
@@ -39,7 +40,6 @@
 
 .header-list-contacts {
     display: flex;
-    margin-left: 335px;
 }
 
 .header-item-contacts {
@@ -125,7 +125,6 @@ padding: 6px 23px 6px 23px;
 
 .portf-work-section {
     padding-top: 34px;
-    margin-left: 215px;
     padding-bottom: 94px;
 }
 
@@ -188,10 +187,6 @@ margin-left: 215px;
 
 .logo-color {
     color: #2196F3;
-}
-
-.footer-info {
-    margin-left: 215px;
 }
 
 .footer-item {
