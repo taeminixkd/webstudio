@@ -1,18 +1,13 @@
 /* секція хедер */
 
-.header-logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    }
+.header-section{
+    height: 80px;
+}
 
-.logo-color {
-    color: black;
+.header-container {
+    display: flex;
+    align-items: center;
+    height: inherit;
 }
 
 .header-navigation {
@@ -21,33 +16,32 @@
     -webkit-box-align: center;
 }
 
-.header-item:first-child {
-    padding-right: 54px;
-}
-
-.header-item:last-child {
-    padding-left: 54px;
-}
-
 .header-list {
     display: flex;
+    justify-content: space-between;
+    width: 290px;
     margin-left: 93px;
-}
-
-.header-item-email {
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .header-list-contacts {
     display: flex;
+    justify-content: space-between;
+    width: 307px;
     margin-left: 335px;
 }
 
-.header-item-contacts {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-left: 50px;
+.header-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.logo-black {
+    color: black;
 }
 
 .header-link {
@@ -57,42 +51,53 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    
+    text-decoration: none;
 }
-    .header-email {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-    .header-contacts {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-    
+
 .header-link:hover {
     color: #03A9F4;
 }
+
+.header-email {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+}
+
 .header-email:hover {
     color: #03A9F4;
 }
+
+.header-contacts {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;    
+    text-decoration: none;
+}
+
 .header-contacts:hover {
     color: #03A9F4;
 }
 
 /* секція меін */
 
+/* секція герой */
+
 .hero-section {
-    background: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 280px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #2F303A;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .hero-title {
@@ -103,24 +108,35 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: white;
-padding-top:200px;
+color: #FFFFFF;
+width: 696px;
 }
 
 .hero-button {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87; 
-    text-align: center;
+    line-height: 1.87;    
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background-color: #03A9F4;
+    background-color: #2196F3;
+    border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: none;
+    width: 200px;
+    height: 50px;
     margin-top: 30px;
-    padding: 10px 24px 10px 24px;
+}
+
+/* секція переваги */
+
+.benefits-section {
+    padding-top: 94px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .benefits-title {
@@ -131,25 +147,8 @@ padding-top:200px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    padding-bottom: 10px;
+    width: 270px;
 }
-
-.benefits-list {
-    display: flex;
-    margin-top: 94px;
-}
-
-.benefits-item {
-    padding-left: 30px;
-}
-
-/* .benefits-item:first-child {
-    padding-left: 215px;
-}
-
-.benefits-item:last-child {
-    padding-right: 214px;
-} */
 
 .benefits-text {
 font-family: 'Roboto';
@@ -158,6 +157,20 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
+width: 270px;
+margin-top: 10px;
+}
+
+/* секція робота */
+
+.work-section {
+    padding: 94px 0;
+}
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .work-title {
@@ -171,33 +184,51 @@ color: #212121;
 margin-bottom: 50px;
 }
 
-.work-section {
-    margin-top: 94px;
-    margin-bottom: 94px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.work-list {
-    display: flex;
-}
-
-.work-item:first-child {
-    padding-right: 30px;
-}
-
-.work-item:last-child {
-    padding-left: 30px;
-}
-
 .work-img {
     background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
     mix-blend-mode: normal;
 }
 
+/* секція команда */
+
 .team-section {
-    /* padding-left: 215px; */
-    padding-bottom: 94px;
+    background-color: #f5f4fa;
+    padding: 94px 0;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.team-name {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 30px;
+}
+
+.team-description {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 10px;
 }
 
 .team-title {
@@ -208,16 +239,6 @@ margin-bottom: 50px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-bottom: 50px;
-}
-
-.team-list {
-    display: flex;
-}
-
-.team-item {
-    justify-content: space-around;
-    align-items: center;
 }
 
 .team-img {
@@ -229,52 +250,41 @@ margin-bottom: 50px;
     padding-bottom: 30px;
 }
 
-/* .team-img:last-child {
-    padding-right: 215px;
-} */
-
-.team-name {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-left: 70px;
-}
-
-.team-text {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-.team-description {
-font-family: 'Roboto';
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: #757575;
-margin-left: 70px;
-padding-top: 10px;
-}
-
-
 /* секція футер */
 
 .footer-section {
     background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 72px;
+    padding-top: 60px 0;
+}
+
+.footer-list {
+    margin-top: 20px;
+}
+
+.footer-item {
+    padding-top: 9px;
+}
+
+.footer-item:first-child {
+margin-top: 0;
+}
+
+.footer-address {
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: white;
+}
+
+.footer-contacts {
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-logo {
@@ -284,35 +294,11 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: white;
-margin-bottom: 20px;
-/* margin-left: 215px; */
+text-decoration: none;
 }
 
 .logo-color {
     color: #2196F3;
-}
-
-/* .footer-info {
-    margin-left: 215px;
-} */
-
-.footer-item {
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-
-.footer-item:last-child {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.address-link {
-    font-family: 'Roboto';
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: white;
 }
 
 .footer-email {
@@ -324,11 +310,4 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contacts {
-    font-family: 'Roboto';
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-}
+
