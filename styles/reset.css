@@ -9,14 +9,13 @@ text-decoration: none;
 padding: 0;
 margin: 0;
 }
+
 p, h1, h2, h3, h4 {
 margin: 0;
 }
 
-.container {
+.container{
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 15px;
+    margin: 0 auto;
 }
