@@ -64,7 +64,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #757575;
     text-decoration: none;
 }
 
@@ -78,7 +78,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;    
+    color: #757575;  
     text-decoration: none;
 }
 
@@ -246,15 +246,14 @@ margin-bottom: 50px;
     width: 270px;
     height: 260px;
     border-radius: 0px;
-    padding-left: 30px;
-    padding-bottom: 30px;
 }
 
 /* секція футер */
 
 .footer-section {
     background-color: #2F303A;
-    padding-top: 60px 0;
+    padding-bottom: 60px;
+    margin-top: 10px;
 }
 
 .footer-list {
@@ -262,7 +261,7 @@ margin-bottom: 50px;
 }
 
 .footer-item {
-    padding-top: 9px;
+    margin-top: 9px;
 }
 
 .footer-item:first-child {
@@ -295,6 +294,7 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: white;
 text-decoration: none;
+padding-top: 60px;
 }
 
 .logo-color {
@@ -309,5 +309,3 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-
-
