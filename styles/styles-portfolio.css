@@ -1,5 +1,4 @@
 /* Хедер */
-
 .header-section{
     height: 80px;
 }
@@ -36,12 +35,12 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: black;
     text-decoration: none;
 }
 
 .logo-black {
-    color: black;
+    color: #2196F3;
 }
 
 .header-link {
@@ -64,7 +63,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #757575;
     text-decoration: none;
 }
 
@@ -78,7 +77,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;    
+    color: #757575;  
     text-decoration: none;
 }
 
@@ -90,8 +89,7 @@
 /* кнопка */
 
 .portf-work-section {
-    border: 1px solid #ECECEC;
-    padding: 94px 0;
+    padding-bottom: 50px 0;
 }
 
 .button-list {
@@ -99,6 +97,10 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 611px;
+}
+
+.portfolio-button-section {
+    margin-top: 94px;
 }
 
 .portfolio-button {
@@ -112,7 +114,6 @@ color: #212121;
 background: #F5F4FA;
 border: 0;
 border-radius: 4px;
-transition: 0.2s;
 padding: 6px 22px;
 }
 
@@ -170,7 +171,8 @@ margin-top: 4px;
 
 .footer-section {
     background-color: #2F303A;
-    padding-top: 60px 0;
+    padding-bottom: 60px;
+    margin-top: 94px;
 }
 
 .footer-list {
@@ -178,7 +180,7 @@ margin-top: 4px;
 }
 
 .footer-item {
-    padding-top: 9px;
+    margin-top: 9px;
 }
 
 .footer-item:first-child {
@@ -211,6 +213,7 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: white;
 text-decoration: none;
+padding-top: 60px;
 }
 
 .logo-color {
