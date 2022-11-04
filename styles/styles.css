@@ -97,7 +97,7 @@
     height: 600px;
     align-items: center;
     justify-content: center;
-
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img\(11\).jpg);
 }
 
 .hero-title {
@@ -137,6 +137,32 @@ width: 696px;
 .benefits-list {
     display: flex;
     justify-content: space-between;
+}
+
+.benefits-item:before{
+    width: 270px;
+    height: 120px;
+    content: '';
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.benefits-item:nth-child(1)::before{
+    background-image: url('../img/antenna.png');
+}
+.benefits-item:nth-child(2)::before{
+    background-image: url('../img/clock.png');
+}
+.benefits-item:nth-child(3)::before{
+    background-image: url('../img/diagram.png');
+}
+.benefits-item:nth-child(4)::before{
+    background-image: url('../img/astronaut.png');
 }
 
 .benefits-title {
@@ -253,7 +279,7 @@ margin-bottom: 50px;
 .footer-section {
     background-color: #2F303A;
     padding-bottom: 60px;
-    margin-top: 94px;
+    margin-top: 10px;
 }
 
 .footer-list {
