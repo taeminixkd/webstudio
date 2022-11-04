@@ -97,7 +97,7 @@
     height: 600px;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img\(11\).jpg);
+    background-image: url(../img/Img\(11\).jpg);
 }
 
 .hero-title {
@@ -142,7 +142,7 @@ width: 696px;
 .benefits-item:before{
     width: 270px;
     height: 120px;
-    content: '';
+    content: "";
     display: block;
     border-radius: 4px;
     margin-bottom: 30px;
