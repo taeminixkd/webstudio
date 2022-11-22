@@ -106,7 +106,7 @@
     height: 600px;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-section/hero.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
 }
 
 .hero-title {
@@ -162,16 +162,16 @@ width: 696px;
 }
 
 .benefits-item:nth-child(1)::before{
-    background-image: url('../img/benefits-section/antenna.png');
+    background-image: url('../img/antenna.png');
 }
 .benefits-item:nth-child(2)::before{
-    background-image: url('../img/benefits-section/clock.png');
+    background-image: url('../img/clock.png');
 }
 .benefits-item:nth-child(3)::before{
-    background-image: url('../img/benefits-section/diagram.png');
+    background-image: url('../img/diagram.png');
 }
 .benefits-item:nth-child(4)::before{
-    background-image: url('../img/benefits-section/astronaut.png');
+    background-image: url('../img/astronaut.png');
 }
 
 .benefits-title {
@@ -338,7 +338,6 @@ margin-bottom: 50px;
     justify-content: space-between;
     margin-top: 50px;
     width: 1170px;
-
 }
 
 .customers-item {
@@ -361,13 +360,7 @@ margin-bottom: 50px;
 .customers-icon {
     fill: currentColor;
     transition: 0.2s;
-
 }
-
-
-
-
-
 
 /* секція футер */
 
