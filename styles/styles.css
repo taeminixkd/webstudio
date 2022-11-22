@@ -23,11 +23,15 @@
     margin-left: 93px;
 }
 
+.header-link:hover {
+    color: #03A9F4;
+}
+
 .header-list-contacts {
     display: flex;
     justify-content: space-between;
-    width: 307px;
-    margin-left: 335px;
+    width: 333px;
+    margin-left: 309px;
 }
 
 .header-logo {
@@ -54,8 +58,9 @@
     text-decoration: none;
 }
 
-.header-link:hover {
-    color: #03A9F4;
+.header-icon {
+    fill: #757575;
+    margin-right: 10px;
 }
 
 .header-email {
@@ -66,10 +71,6 @@
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
-}
-
-.header-email:hover {
-    color: #03A9F4;
 }
 
 .header-contacts {
@@ -83,7 +84,15 @@
 }
 
 .header-contacts:hover {
-    color: #03A9F4;
+    color: #2196F3;
+}
+
+.header-email:hover {
+    color: #2196F3;
+}
+
+.header-icon:hover {
+    fill: currentColor;
 }
 
 /* секція меін */
@@ -97,7 +106,7 @@
     height: 600px;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img11.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-section/hero.jpg);
 }
 
 .hero-title {
@@ -153,16 +162,16 @@ width: 696px;
 }
 
 .benefits-item:nth-child(1)::before{
-    background-image: url('../img/antenna1.png');
+    background-image: url('../img/benefits-section/antenna.png');
 }
 .benefits-item:nth-child(2)::before{
-    background-image: url('../img/clock1.png');
+    background-image: url('../img/benefits-section/clock.png');
 }
 .benefits-item:nth-child(3)::before{
-    background-image: url('../img/diagram1.png');
+    background-image: url('../img/benefits-section/diagram.png');
 }
 .benefits-item:nth-child(4)::before{
-    background-image: url('../img/astronaut1.png');
+    background-image: url('../img/benefits-section/astronaut.png');
 }
 
 .benefits-title {
@@ -274,12 +283,106 @@ margin-bottom: 50px;
     border-radius: 0px;
 }
 
+.icon-list {
+    display: flex;
+    padding-top: 16px;
+    padding-left: 32px;
+}
+
+.icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icon {
+    fill: #AFB1B8;
+}
+
+.icon-item {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 44px;
+    height: 44px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-item:hover {
+    background-color: #2196F3 ;
+}
+
+.icon-item:hover .icon {
+    fill: #FFFFFF;
+}
+
+/* секція постійні клієнти */
+
+.customers-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-titel {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 1170px;
+
+}
+
+.customers-item {
+    height: 90px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: 0.2s;
+    color: #AFB1B8;
+}
+
+.customers-item:hover {
+    color: #2196F3;
+    border-color: #2196F3;
+}
+
+.customers-icon {
+    fill: currentColor;
+    transition: 0.2s;
+
+}
+
+
+
+
+
+
 /* секція футер */
 
 .footer-section {
     background-color: #2F303A;
     padding-bottom: 60px;
     margin-top: 10px;
+}
+
+.footer-section2 {
+    display: flex;
+}
+
+.section-icon {
+    padding-left: 70px;
 }
 
 .footer-list {
@@ -336,4 +439,43 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer-title {
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.footer-list-icon {
+    display: flex;
+    padding-top: 20px;
+}
+
+.footer-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icon {
+    fill: #FFFFFF;
+}
+
+.footer-icon-item:hover {
+    background-color: #2196F3 ;
+}
+
+
+.footer-icon-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
