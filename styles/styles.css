@@ -79,6 +79,10 @@
     border-radius: 5px;
 }
 
+.header-link:hover>svg {
+    fill: #2196F3;
+}
+
 .header-icon {
     fill: #757575;
     margin-right: 10px;
@@ -450,11 +454,7 @@ content: 'Мобільні додатки';
     border-radius: 4px;
 }
 
-.form-icon {
-    color: black;
-}
-
-.form-title{
+.form-title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
@@ -463,7 +463,8 @@ content: 'Мобільні додатки';
     letter-spacing: 0.03em;
     color: #212121;
 }
-.form-container{
+
+.form-container {
     position: absolute;
     display: flex;
     align-items: center;
@@ -475,20 +476,23 @@ content: 'Мобільні додатки';
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s
+    transition: 0.2s;
 }
-.form-container:hover>.form-icon{
+
+.form-container:hover>.form-icon {
     fill: #2196F3;
-    transition: ease 0.2s;
+    transition: 0.2s;
 }
-.form-item{
+.form-item {
     margin-top: 10px;
     position: relative;
 }
-.form-item:first-child{
+
+.form-item:first-child {
     margin-top: 12px;
 }
-.form-item:last-child{
+
+.form-item:last-child {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -499,7 +503,8 @@ content: 'Мобільні додатки';
     align-items: center;
     margin-top: 20px;
 }
-.form-subtitle{
+
+.form-sub-title {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -507,30 +512,36 @@ content: 'Мобільні додатки';
     letter-spacing: 0.01em;
     color: #757575;
 }
-.form-field, .form-textarea{
+
+.form-field, .form-textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
 }
-.form-field:focus+.form-svg{
+
+.form-field:focus+.form-svg {
     fill: #2196F3;
 }
-.form-field:hover, .form-textarea:hover{
+
+.form-field:hover, .form-textarea:hover {
     border-color: #2196F3;
 }
-.form-field{
+
+.form-field {
     padding: 12px 18px 12px 42px;
     height: 40px;
     width: 448px;
     display: block;
 }
-.form-svg{
+
+.form-svg {
     position: absolute;
     bottom: 14px;
     left: 15px;
 }
-.form-textarea{
+
+.form-textarea {
     width: 448px;
     height: 120px;
     padding: 12px 16px;
@@ -541,18 +552,22 @@ content: 'Мобільні додатки';
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.form-checkbox{
+
+.form-checkbox {
     width: 16px;
     height: 15px;
 }
-.form-text{
+
+.form-text {
     margin-left: 8.38px;
 }
-.form-link:link, .form-link:visited{
+
+.form-link:link, .form-link:visited {
     color: #2196F3;
     text-decoration: underline #2196F3;
 }
-.form-but{
+
+.form-button {
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -568,7 +583,8 @@ content: 'Мобільні додатки';
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.overlay{
+
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -578,10 +594,11 @@ content: 'Мобільні додатки';
     z-index: 2;
     transition: 0.4s;
 }
-.overlay.is-hidden{
-    /* opacity: 0; */
+
+.overlay.is-hidden {
+    opacity: 0;
     pointer-events: none;
-    transition:0.4s;
+    transition: 0.4s;
 }
 
 /* секція футер */
@@ -709,14 +726,14 @@ color: #FFFFFF;
     padding-top: 12px;
 }
 
-.footer-form{
+.footer-form {
     display: flex;
     justify-content: space-between;
     width: 570px;
     margin-top: 20px;
 }
 
-.footer-button2{
+.footer-button2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -737,7 +754,7 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
-.footer-field{
+.footer-field {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -751,14 +768,14 @@ color: #FFFFFF;
     padding: 15px 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: ease 0.2s;
+    transition: 0.2s;
 }
 
-.footer-field:hover{
+.footer-field:hover {
     border-color: #fff;
 }
 
-.footer-send{
+.footer-send {
     fill: #fff;
     margin-left: 12px;
 }
