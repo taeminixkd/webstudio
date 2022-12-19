@@ -291,7 +291,7 @@
         <h2 class="form-title">Залиште свої дані, ми Вам зателефонуємо</h2>
         <button class="form-container" type="button" data-close-modal>
           <svg class="form-icon" width="11" height="11">
-            <use href="./imgs/symboldefts.svg#icon-vector"></use>
+            <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
         <ul class="form-list">
@@ -299,21 +299,21 @@
             <label for="name" class="form-sub-title">Ім’я</label>
             <input type="text" class="form-field" required id="name">
             <svg class="form-svg" width="12" height="12">
-              <use href="./imgs/symboldefts.svg#icon-person-black"></use>
+              <use href="./img/symbol-defs.svg#icon-person-black"></use>
             </svg>
           </li>
           <li class="form-item">
             <label for="tel" class="form-sub-title">Телефон</label>
             <input type="tel" class="form-field" required id="tel">
             <svg class="form-svg" width="13" height="13">
-              <use href="./imgs/symboldefts.svg#icon-phone-black"></use>
+              <use href="./img/symbol-defs.svg#icon-phone-black"></use>
             </svg>
           </li>
           <li class="form-item">
             <label for="mail" class="form-sub-title">Пошта</label>
             <input type="email" class="form-field" required id="mail">
             <svg class="form-svg" width="15" height="12">
-              <use href="./imgs/symboldefts.svg#icon-email-black"></use>
+              <use href="./img/symbol-defs.svg#icon-email-black"></use>
             </svg>
           </li>
           <li class="form-item">
@@ -383,10 +383,9 @@
             <h2 class="footer-title2">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
             <form class="footer-form">
               <input type="email" class="footer-field" placeholder="E-mail" required>
-              <button class="footer-button2">
-                Підписатись
+              <button class="footer-button2">Підписатись
                 <svg class="footer-send" width="24" height="24">
-                  <use href="./imgs/symboldefts.svg#icon-send"></use>
+                  <use href="./img/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>
             </form>
@@ -408,12 +407,12 @@
 
     function toggleModal() {
       refs.backdrop.classList.toggle("is-hidden");
-      if(document.body.style.overflow == 'hidden'){
-      document.body.style.overflow = 'visible';
-    }
-    else{
-      document.body.style.overflow = 'hidden';
-    }
+      if (document.body.style.overflow == 'hidden') {
+        document.body.style.overflow = 'visible';
+      }
+      else {
+        document.body.style.overflow = 'hidden';
+      }
     }
 
     function logBackdropClick() {
