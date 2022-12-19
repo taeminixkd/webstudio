@@ -56,7 +56,6 @@
     letter-spacing: 0.02em;
     color: #212121;
     text-decoration: none;
-    text-decoration: none;
     align-items: center;
     display: flex;
     transition: 0.2s;
@@ -77,6 +76,7 @@
     top: 96%;
     background-color: #2196F3;
     border-radius: 5px;
+    radius: 2px
 }
 
 .header-link:hover>svg {
