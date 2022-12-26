@@ -85,6 +85,7 @@
 }
 
 .header-email {
+    display: flex;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
@@ -92,9 +93,11 @@
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    align-items: center;
 }
 
 .header-contacts {
+    display: flex;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
@@ -102,6 +105,7 @@
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    align-items: center;
 }
 
 .header-contacts:hover {
@@ -112,9 +116,13 @@
     color: #2196f3;
 }
 
-.header-icon:hover {
+.header-icon {
     fill: currentColor;
 }
+
+/* .header-contacts:hover .header-icon {
+    fill: #2196f3;
+} */
 
 /* секція меін */
 
@@ -509,7 +517,14 @@ content: 'Мобільні додатки';
     color: #757575;
 }
 
-.form-field, .form-textarea {
+.form-textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.form-field {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
@@ -520,7 +535,11 @@ content: 'Мобільні додатки';
     fill: #2196F3;
 }
 
-.form-field:hover, .form-textarea:hover {
+.form-textarea:hover {
+    border-color: #2196F3;
+}
+
+.form-field:hover {
     border-color: #2196F3;
 }
 
@@ -535,6 +554,10 @@ content: 'Мобільні додатки';
     position: absolute;
     bottom: 14px;
     left: 15px;
+}
+
+.form-field:hover + .form-svg {
+    fill: #2196F3;
 }
 
 .form-textarea {
@@ -747,7 +770,7 @@ color: #FFFFFF;
 }
 
 .footer-field:hover {
-    border-color: #fff;
+    border-color: #2196F3;
 }
 
 .footer-button2 {
