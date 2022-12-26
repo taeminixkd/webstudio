@@ -100,6 +100,8 @@
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .header-contacts {
@@ -110,6 +112,8 @@
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .header-contacts:hover {
@@ -120,7 +124,7 @@
     color: #2196f3;
 }
 
-.header-icon:hover {
+.header-icon {
     fill: currentColor;
 }
 
@@ -407,11 +411,10 @@ color: #FFFFFF;
     padding: 15px 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: ease 0.2s;
 }
 
 .footer-field:hover{
-    border-color: #fff;
+    border-color: #2196F3;
 }
 
 .footer-send{
