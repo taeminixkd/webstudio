@@ -59,7 +59,7 @@
     height: 100%;
 }
 
-.header-link:hover{
+.header-link:hover {
     color: #2196F3;
 }
 
@@ -118,6 +118,27 @@
 
 .header-icon {
     fill: currentColor;
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+}
+
+.header-icon:hover {
+    transform: rotate(3600deg);
+}
+
+.header-item-email {
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+}
+
+.header-item-email:hover {
+    transform: translateY(-10px);
+}
+
+.header-item-contacts {
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+}
+
+.header-item-contacts:hover {
+    transform: translateY(-10px);
 }
 
 /* .header-contacts:hover .header-icon {
@@ -281,10 +302,10 @@
     align-items: center;
     width: 100%;
     height: 70px;
-} 
+}
 
 .work-item:nth-child(2)::before {
-content: 'Мобільні додатки';
+    content: 'Мобільні додатки';
 }
 
 .work-item:nth-child(3)::before {
@@ -367,6 +388,7 @@ content: 'Мобільні додатки';
     display: flex;
     padding-top: 16px;
     padding-left: 32px;
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
 .icon-item:not(:last-child) {
@@ -375,6 +397,7 @@ content: 'Мобільні додатки';
 
 .icon {
     fill: #afb1b8;
+    transition: all ease 0.3s;
 }
 
 .icon-item {
@@ -385,14 +408,17 @@ content: 'Мобільні додатки';
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all ease 0.3s;
 }
 
 .icon-item:hover {
     background-color: #2196f3;
+    transform: scale(1.3, 1.3)
 }
 
 .icon-item:hover .icon {
     fill: #ffffff;
+    transform: scale(1.3, 1.3)
 }
 
 /* секція постійні клієнти */
@@ -430,11 +456,13 @@ content: 'Мобільні додатки';
     border-radius: 4px;
     transition: 0.2s;
     color: #afb1b8;
+    transition: all ease 0.3s;
 }
 
 .customers-item:hover {
     color: #2196f3;
     border-color: #2196f3;
+    transform: skew(5deg, 15deg)
 }
 
 .customers-icon {
@@ -444,7 +472,7 @@ content: 'Мобільні додатки';
 
 /* секція форма */
 
-.form-section{
+.form-section {
     padding: 40px;
     width: 528px;
     height: 581px;
@@ -487,6 +515,7 @@ content: 'Мобільні додатки';
     fill: #2196F3;
     transition: 0.2s;
 }
+
 .form-item {
     margin-top: 10px;
     position: relative;
@@ -512,7 +541,7 @@ content: 'Мобільні додатки';
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;    
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
 }
@@ -556,7 +585,7 @@ content: 'Мобільні додатки';
     left: 15px;
 }
 
-.form-field:hover + .form-svg {
+.form-field:hover+.form-svg {
     fill: #2196F3;
 }
 
@@ -581,7 +610,8 @@ content: 'Мобільні додатки';
     margin-left: 8.38px;
 }
 
-.form-link:link, .form-link:visited {
+.form-link:link,
+.form-link:visited {
     color: #2196F3;
     text-decoration: underline #2196F3;
 }
@@ -646,37 +676,39 @@ content: 'Мобільні додатки';
 }
 
 .footer-item:first-child {
-margin-top: 0;
+    margin-top: 0;
 }
 
 .footer-address {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: white;
-text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: white;
+    text-decoration: none;
 }
 
 .footer-contacts {
     font-family: 'Roboto';
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    display: block;
 }
 
 .footer-logo {
     font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: white;
-text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: white;
+    text-decoration: none;
 }
 
 .logo-color {
@@ -685,22 +717,33 @@ text-decoration: none;
 
 .footer-email {
     font-family: 'Roboto';
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    display: block;
 }
 
+.footer-email:hover {
+    color: #2196F3;
+    transform: scale(1.2);
+}
+
+.footer-contacts:hover {
+    color: #2196F3;
+    transform: scale(1.2);
+}
 
 .footer-title {
     font-family: 'Roboto';
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .footer-list-icon {
@@ -716,10 +759,6 @@ color: #FFFFFF;
     fill: #FFFFFF;
 }
 
-.footer-icon-item:hover {
-    background-color: #2196F3 ;
-}
-
 .footer-icon-item {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -728,6 +767,12 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+}
+
+.footer-icon-item:hover {
+    background: #2196F3;
+    transform: rotate(1800deg);
 }
 
 .footer-mailing-list {
@@ -792,9 +837,19 @@ color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+}
+
+.footer-button2:hover {
+transform: scale(1.1);
 }
 
 .footer-send {
     fill: #FFFFFF;
     margin-left: 12px;
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+}
+
+.footer-send:hover {
+    transform: rotate(720deg);
 }
