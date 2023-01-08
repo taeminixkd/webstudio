@@ -1,36 +1,36 @@
 /* секція хедер */
 
-.header-section {
+.header-page {
     height: 80px;
 }
 
-.header-container {
+.header-page__container {
     display: flex;
     align-items: center;
     height: inherit;
 }
 
-.header-navigation {
+.header-page__navigation {
     display: flex;
     align-items: center;
     -webkit-box-align: center;
 }
 
-.header-list {
+.pages {
     display: flex;
     justify-content: space-between;
     width: 290px;
     margin-left: 93px;
 }
 
-.header-list-contacts {
+.contacts {
     display: flex;
     justify-content: space-between;
     width: 333px;
     margin-left: 309px;
 }
 
-.header-logo {
+.header-page__logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -44,7 +44,7 @@
     color: black;
 }
 
-.header-link {
+.pages__link {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
@@ -59,11 +59,11 @@
     height: 100%;
 }
 
-.header-link:hover {
+.pages__link:hover {
     color: #2196F3;
 }
 
-.header-overlay::after {
+.pages__overlay::after {
     content: '';
     display: block;
     width: 100%;
@@ -75,16 +75,16 @@
     margin-top: 30px;
 }
 
-.header-link:hover>svg {
+.pages__link:hover>svg {
     fill: #2196F3;
 }
 
-.header-icon {
+.contacts__icon {
     fill: #757575;
     margin-right: 10px;
 }
 
-.header-email {
+.contacts__email {
     display: flex;
     font-family: "Roboto";
     font-weight: 500;
@@ -96,7 +96,7 @@
     align-items: center;
 }
 
-.header-contacts {
+.contacts__tell {
     display: flex;
     font-family: "Roboto";
     font-weight: 500;
@@ -108,38 +108,31 @@
     align-items: center;
 }
 
-.header-contacts:hover {
+.contacts__tell:hover {
     color: #2196f3;
 }
 
-.header-email:hover {
+.contacts__email:hover {
     color: #2196f3;
 }
 
-.header-icon {
+.contacts__icon {
     fill: currentColor;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.header-icon:hover {
+.contacts__icon:hover {
     transform: rotate(3600deg);
 }
 
-.header-item-email {
+.contacts__item {
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.header-item-email:hover {
+.contacts__item:hover {
     transform: translateY(-10px);
 }
 
-.header-item-contacts {
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-}
-
-.header-item-contacts:hover {
-    transform: translateY(-10px);
-}
 
 /* .header-contacts:hover .header-icon {
     fill: #2196f3;
@@ -162,7 +155,7 @@
         url(../img/hero.jpg);
 }
 
-.hero-title {
+.hero-section__title {
     font-family: "Roboto";
     font-weight: 900;
     font-size: 44px;
@@ -174,7 +167,7 @@
     width: 696px;
 }
 
-.hero-button {
+.hero-section__button {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
@@ -196,12 +189,12 @@
     padding-top: 94px;
 }
 
-.benefits-list {
+.benefits-section__list {
     display: flex;
     justify-content: space-between;
 }
 
-.benefits-item:before {
+.benefits-section__item:before {
     width: 270px;
     height: 120px;
     content: "";
@@ -214,23 +207,23 @@
     background-position: center;
 }
 
-.benefits-item:nth-child(1)::before {
+.benefits-section__item:nth-child(1)::before {
     background-image: url("../img/antenna.png");
 }
 
-.benefits-item:nth-child(2)::before {
+.benefits-section__item:nth-child(2)::before {
     background-image: url("../img/clock.png");
 }
 
-.benefits-item:nth-child(3)::before {
+.benefits-section__item:nth-child(3)::before {
     background-image: url("../img/diagram.png");
 }
 
-.benefits-item:nth-child(4)::before {
+.benefits-section__item:nth-child(4)::before {
     background-image: url("../img/astronaut.png");
 }
 
-.benefits-title {
+.benefits-section__title {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
@@ -241,7 +234,7 @@
     width: 270px;
 }
 
-.benefits-text {
+.benefits-section__text {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
@@ -258,13 +251,13 @@
     padding: 94px 0;
 }
 
-.work-list {
+.work-section__list {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.work-title {
+.work-section__title {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
@@ -275,12 +268,12 @@
     margin-bottom: 50px;
 }
 
-.work-img {
+.work-section__img {
     background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
     mix-blend-mode: normal;
 }
 
-.work-item {
+.work-section__item {
     position: relative;
     font-family: 'Roboto';
     font-weight: 700;
@@ -292,7 +285,7 @@
     color: #FFFFFF;
 }
 
-.work-item::before {
+.work-section__item::before {
     content: 'Десктопні додатки';
     display: flex;
     position: absolute;
@@ -304,16 +297,15 @@
     height: 70px;
 }
 
-.work-item:nth-child(2)::before {
+.work-section__item:nth-child(2)::before {
     content: 'Мобільні додатки';
 }
 
-.work-item:nth-child(3)::before {
+.work-section__item:nth-child(3)::before {
     content: 'Дизайнерські рішення';
 }
 
-
-.work-text {
+.work-section__text {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
@@ -331,13 +323,13 @@
     padding: 94px 0;
 }
 
-.team-list {
+.workers {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.team-item {
+.workers__work {
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -345,7 +337,7 @@
     padding-bottom: 30px;
 }
 
-.team-name {
+.workers__name {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
@@ -356,7 +348,7 @@
     margin-top: 30px;
 }
 
-.team-description {
+.workers__description {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
@@ -367,7 +359,7 @@
     margin-top: 10px;
 }
 
-.team-title {
+.team-section__title {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
@@ -377,30 +369,30 @@
     color: #212121;
 }
 
-.team-img {
+.workers__img {
     background: url(4853.jpg);
     width: 270px;
     height: 260px;
     border-radius: 0px;
 }
 
-.icon-list {
+.icon-workers__list {
     display: flex;
     padding-top: 16px;
     padding-left: 32px;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.icon-item:not(:last-child) {
+.icon-workers__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.icon {
+.workers__icon {
     fill: #afb1b8;
     transition: all ease 0.3s;
 }
 
-.icon-item {
+.icon-workers__item {
     border-radius: 50%;
     background-color: #ffffff;
     width: 44px;
@@ -411,12 +403,12 @@
     transition: all ease 0.3s;
 }
 
-.icon-item:hover {
+.icon-workers__item:hover {
     background-color: #2196f3;
     transform: scale(1.3, 1.3)
 }
 
-.icon-item:hover .icon {
+.icon-workers__item:hover .workers__icon {
     fill: #ffffff;
     transform: scale(1.3, 1.3)
 }
@@ -428,7 +420,7 @@
     padding-bottom: 94px;
 }
 
-.customers-titel {
+.customers-section__titel {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
@@ -439,14 +431,14 @@
     text-align: center;
 }
 
-.customers-list {
+.customers-section__list {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     width: 1170px;
 }
 
-.customers-item {
+.customers-section__item {
     height: 90px;
     width: 170px;
     display: flex;
@@ -459,13 +451,13 @@
     transition: all ease 0.3s;
 }
 
-.customers-item:hover {
+.customers-section__item:hover {
     color: #2196f3;
     border-color: #2196f3;
     transform: skew(5deg, 15deg)
 }
 
-.customers-icon {
+.customers-section__icon {
     fill: currentColor;
     transition: 0.2s;
 }
@@ -486,7 +478,7 @@
     border-radius: 4px;
 }
 
-.form-title {
+.form-section__title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
@@ -496,7 +488,7 @@
     color: #212121;
 }
 
-.form-container {
+.form-section__container {
     position: absolute;
     display: flex;
     align-items: center;
@@ -511,21 +503,21 @@
     transition: 0.2s;
 }
 
-.form-container:hover>.form-icon {
+.form-section__container:hover>.form-section__icon {
     fill: #2196F3;
     transition: 0.2s;
 }
 
-.form-item {
+.form-section__item {
     margin-top: 10px;
     position: relative;
 }
 
-.form-item:first-child {
+.form-section__item:first-child {
     margin-top: 12px;
 }
 
-.form-item:last-child {
+.form-section__item:last-child {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -537,7 +529,7 @@
     margin-top: 20px;
 }
 
-.form-sub-title {
+.form-section__sub-title {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -546,50 +538,50 @@
     color: #757575;
 }
 
-.form-textarea {
+.form-section__textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
 }
 
-.form-field {
+.form-section__field {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
 }
 
-.form-field:focus+.form-svg {
+.form-section__field:focus+.form-section__svg {
     fill: #2196F3;
 }
 
-.form-textarea:hover {
+.form-section__textarea:hover {
     border-color: #2196F3;
 }
 
-.form-field:hover {
+.form-section__field:hover {
     border-color: #2196F3;
 }
 
-.form-field {
+.form-section__field {
     padding: 12px 18px 12px 42px;
     height: 40px;
     width: 448px;
     display: block;
 }
 
-.form-svg {
+.form-section__svg {
     position: absolute;
     bottom: 14px;
     left: 15px;
 }
 
-.form-field:hover+.form-svg {
+.form-section__field:hover+.form-section__svg {
     fill: #2196F3;
 }
 
-.form-textarea {
+.form-section__textarea {
     width: 448px;
     height: 120px;
     padding: 12px 16px;
@@ -601,22 +593,22 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-checkbox {
+.form-section__checkbox {
     width: 16px;
     height: 15px;
 }
 
-.form-text {
+.form-section__text {
     margin-left: 8.38px;
 }
 
-.form-link:link,
-.form-link:visited {
+.form-section__link:link,
+.form-section__link:visited {
     color: #2196F3;
     text-decoration: underline #2196F3;
 }
 
-.form-button {
+.form-section__button {
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -652,34 +644,34 @@
 
 /* секція футер */
 
-.footer-section {
+.footer-page__section {
     background-color: #2F303A;
     padding: 60px 0;
     margin-top: 94px;
 }
 
-.footer-container {
+.footer-page__container {
     display: flex;
 }
 
-.div-icon {
+.div-page__icon {
     margin-left: 70px;
     padding-top: 12px;
 }
 
-.footer-list {
+.footer-page__list {
     margin-top: 20px;
 }
 
-.footer-item {
+.footer-page__item {
     margin-top: 9px;
 }
 
-.footer-item:first-child {
+.footer-page__item:first-child {
     margin-top: 0;
 }
 
-.footer-address {
+.footer-page__address {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -690,7 +682,7 @@
     text-decoration: none;
 }
 
-.footer-contacts {
+.footer-page__contacts {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -701,7 +693,7 @@
     display: block;
 }
 
-.footer-logo {
+.footer-page__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -715,7 +707,7 @@
     color: #2196F3;
 }
 
-.footer-email {
+.footer-page__email {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -726,17 +718,17 @@
     display: block;
 }
 
-.footer-email:hover {
+.footer-page__email:hover {
     color: #2196F3;
     transform: scale(1.2);
 }
 
-.footer-contacts:hover {
+.footer-page__contacts:hover {
     color: #2196F3;
     transform: scale(1.2);
 }
 
-.footer-title {
+.footer-page__title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
@@ -746,12 +738,12 @@
     color: #FFFFFF;
 }
 
-.footer-list-icon {
+.footer-icon__list {
     display: flex;
     padding-top: 20px;
 }
 
-.footer-icon-item:not(:last-child) {
+.footer-icon__item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -759,7 +751,7 @@
     fill: #FFFFFF;
 }
 
-.footer-icon-item {
+.footer-icon__item {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
@@ -770,17 +762,17 @@
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.footer-icon-item:hover {
+.footer-icon__item:hover {
     background: #2196F3;
     transform: rotate(1800deg);
 }
 
-.footer-mailing-list {
+.footer-page__mailing-list {
     margin-left: 93px;
     padding-top: 12px;
 }
 
-.footer-title2 {
+.footer-page__title2 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
@@ -797,7 +789,7 @@
     margin-top: 20px;
 }
 
-.footer-field {
+.footer-form__field {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -814,11 +806,11 @@
     transition: 0.2s;
 }
 
-.footer-field:hover {
+.footer-form__field:hover {
     border-color: #2196F3;
 }
 
-.footer-button2 {
+.footer-form__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -840,16 +832,16 @@
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.footer-button2:hover {
-transform: scale(1.1);
+.footer-form__button:hover {
+    transform: scale(1.1);
 }
 
-.footer-send {
+.footer-form__send {
     fill: #FFFFFF;
     margin-left: 12px;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.footer-send:hover {
+.footer-form__send:hover {
     transform: rotate(720deg);
 }
