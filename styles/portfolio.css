@@ -1,22 +1,22 @@
 /* секція хедер */
 
-.header-page {
+.header-sheet {
     height: 80px;
 }
 
-.header-page__container {
+.header-sheet__container {
     display: flex;
     align-items: center;
     height: inherit;
 }
 
-.header-page__navigation {
+.header-sheet__navigation {
     display: flex;
     align-items: center;
     -webkit-box-align: center;
 }
 
-.pages {
+.sheets {
     display: flex;
     justify-content: space-between;
     width: 290px;
@@ -30,7 +30,7 @@
     margin-left: 309px;
 }
 
-.header-page__logo {
+.header-sheet__logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -40,11 +40,11 @@
     text-decoration: none;
 }
 
-.logo-black {
+.header-sheet__black {
     color: black;
 }
 
-.pages__link {
+.sheets__link {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
@@ -59,11 +59,11 @@
     height: 100%;
 }
 
-.pages__link:hover {
+.sheets__link:hover {
     color: #2196F3;
 }
 
-.pages__overlay::after {
+.sheets__overlay::after {
     content: '';
     display: block;
     width: 100%;
@@ -75,7 +75,7 @@
     margin-top: 30px;
 }
 
-.pages__link:hover>svg {
+.sheets__link:hover>svg {
     fill: #2196F3;
 }
 
@@ -177,7 +177,7 @@
 
 /* секція проект  */
 
-.projects {
+.projection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -185,7 +185,7 @@
     align-items: center;
 }
 
-.projects__item {
+.projection__item {
     border: 1px solid #EEEEEE;
     padding-bottom: 20px;
     margin-top: 0;
@@ -193,25 +193,25 @@
     transition: all ease-out 0.3s;
 }
 
-.projects__item:hover {
+.projection__item:hover {
     transform: scale(1.1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects__item:nth-child(n+4) {
+.projection__item:nth-child(n+4) {
     margin-top: 30px;
 }
 
-.projects__item:nth-child(n+4) {
+.projection__item:nth-child(n+4) {
     margin-top: 30px;
 }
 
-.projects__img {
+.projection__img {
     background: url(portfolio1.jpg);
     padding-bottom: 20px;
 }
 
-.projects__name {
+.projection__name {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -222,7 +222,7 @@
     margin-left: 24px;
 }
 
-.projects__text {
+.projection__text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -234,7 +234,7 @@
     margin-left: 24px;
 }
 
-.projects__overlay {
+.projection__overlay {
     position: absolute;
     background: rgba(33, 150, 243, 0.9);
     width: 370px;
@@ -252,41 +252,41 @@
     transform: scale(1.1) rotate(10deg);
 }
 
-.projects__item:hover>.projects__overlay {
+.projection__item:hover>.projection__overlay {
     opacity: 1;
     transform: translateY(0px) scale(1) rotate(0deg);
 }
 
-/* футер */
+/* секція футер */
 
-.footer-page__section {
+.footer-sheet__section {
     background-color: #2F303A;
     padding: 60px 0;
     margin-top: 94px;
 }
 
-.footer-page__container {
+.footer-sheet__container {
     display: flex;
 }
 
-.div-page__icon {
+.div-sheet__icon {
     margin-left: 70px;
     padding-top: 12px;
 }
 
-.footer-page__list {
+.footer-sheet__list {
     margin-top: 20px;
 }
 
-.footer-page__item {
+.footer-sheet__item {
     margin-top: 9px;
 }
 
-.footer-page__item:first-child {
+.footer-sheet__item:first-child {
     margin-top: 0;
 }
 
-.footer-page__address {
+.footer-sheet__address {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -297,7 +297,7 @@
     text-decoration: none;
 }
 
-.footer-page__contacts {
+.footer-sheet__contacts {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -308,7 +308,7 @@
     display: block;
 }
 
-.footer-page__logo {
+.footer-sheet__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -318,11 +318,11 @@
     text-decoration: none;
 }
 
-.logo-color {
+.footer-sheet__blue {
     color: #2196F3;
 }
 
-.footer-page__email {
+.footer-sheet__email {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -333,17 +333,17 @@
     display: block;
 }
 
-.footer-page__email:hover {
+.footer-sheet__email:hover {
     color: #2196F3;
     transform: scale(1.2);
 }
 
-.footer-page__contacts:hover {
+.footer-sheet__contacts:hover {
     color: #2196F3;
     transform: scale(1.2);
 }
 
-.footer-page__title {
+.footer-sheet__title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
@@ -353,20 +353,20 @@
     color: #FFFFFF;
 }
 
-.footer-icon__list {
+.icon {
     display: flex;
     padding-top: 20px;
 }
 
-.footer-icon__item:not(:last-child) {
+.icon__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-icon {
+.icon__svg {
     fill: #FFFFFF;
 }
 
-.footer-icon__item {
+.icon__item {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
@@ -377,17 +377,17 @@
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
-.footer-icon__item:hover {
+.icon__item:hover {
     background: #2196F3;
     transform: rotate(1800deg);
 }
 
-.footer-page__mailing-list {
+.footer-sheet__mailing-list {
     margin-left: 93px;
     padding-top: 12px;
 }
 
-.footer-page__title2 {
+.footer-sheet__title2 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
