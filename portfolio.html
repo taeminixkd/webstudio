@@ -6,137 +6,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+<link rel="stylesheet" href="./css/portfolio.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles-portfolio.css">
 </head>
 
 <body>
     <!-- секція хеадер -->
-    <header>
-        <nav class="header-navigation">
-            <a href="/" class="header-logo">
-                <span class="logo-color">Web</span>Studio
-            </a>
-            <ul class="header-list">
-                <li class="header-item">
-                    <a href="/" class="header-link">Студія</a>
-                </li>
-                <li class="header-item">
-                    <a href="./portfolio.html" class="header-link">Портфоліо</a>
-                </li>
-                <li class="header-item">
-                    <a href="/" class="header-link">Контакти</a>
-                </li>
-            </ul>
-            <ul class="header-list">
-                <li class="header-item">
-                    <a href="mailto:info@devstudio.com" class="header-email">info@devstudio.com</a>
-                </li>
-                <li class="header-item">
-                    <a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header-sheet">
+        <div class="header-sheet__container container">
+            <a href="./index.html" class="header-sheet__logo">Web<span class="header-sheet__black">Studio</span></a>
+            <nav class="header-sheet__navigation">
+                <ul class="sheets">
+                    <li class="sheets__item">
+                        <a href="/" class="sheets__link sheets__overlay">Студія</a>
+                    </li>
+                    <li class="sheets__item">
+                        <a href="./portfolio.html" class="sheets__link">Портфоліо</a>
+                    </li>
+                    <li class="sheets__item">
+                        <a href="/" class="sheets__link">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__email">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__tell">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./img/symbol-defs.svg#icon-vector"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
 
     <!-- секція меін -->
 
-    <main>
+    <main class="main-portf">
 
         <!-- секція кнопок -->
 
-        <section class="portfolio-button-section">
-            <ul class="button-list">
-                <li class="button-item">
-                    <button type="button" class="portfolio-button">Усе</button>
+        <section class="portfolio-section">
+            <ul class="but">
+                <li class="but__item">
+                    <button type="button" class="but__button">Усе</button>
                 </li>
-                <li class="button-item">
-                    <button type="button" class="portfolio-button">Веб-сайти</button>
+                <li class="but__item">
+                    <button type="button" class="but__button">Веб-сайти</button>
                 </li>
-                <li class="button-item">
-                    <button type="button" class="portfolio-button">Застосунки</button>
+                <li class="but__item">
+                    <button type="button" class="but__button">Застосунки</button>
                 </li>
-                <li class="button-item">
-                    <button type="button" class="portfolio-button">Дизайн</button>
+                <li class="but__item">
+                    <button type="button" class="but__button">Дизайн</button>
                 </li>
-                <li class="button-item">
-                    <button type="button" class="portfolio-button">Маркетинг</button>
+                <li class="but__item">
+                    <button type="button" class="but__button">Маркетинг</button>
                 </li>
             </ul>
         </section>
 
-        <!-- секція  -->
+        <!-- секція проект -->
 
         <section class="portf-work-section">
-            <ul class="portf-work-list">
-                <li class="portf-work-item">
-                    <img src="./img/img(1).jpg" alt="Технокряк" class="portf-work-img">
-                    <h3 class="portf-work-name">Технокряк</h3>
-                    <h4 class="portf-work-test">Веб-сайт</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(2).jpg" alt="Постер New Orlean vs Golden Star" class="portf-work-img">
-                    <h3 class="portf-work-name">Постер New Orlean vs Golden Star</h3>
-                    <h4 class="portf-work-test">Дизайн</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(3).jpg" alt="Ресторан Seafood" class="portf-work-img">
-                    <h3 class="portf-work-name">Ресторан Seafood</h3>
-                    <h4 class="portf-work-test">Застосунок</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(4).jpg" alt="Проект Prime" class="portf-work-img">
-                    <h3 class="portf-work-name">Проект Prime</h3>
-                    <h4 class="portf-work-test">Маркетинг</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(5).jpg" alt="Проект Boxes" class="portf-work-img">
-                    <h3 class="portf-work-name">Проект Boxes</h3>
-                    <h4 class="portf-work-test">Застосунок</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(6).jpg" alt="Inspiration has no Borders" class="portf-work-img">
-                    <h3 class="portf-work-name">Inspiration has no Borders</h3>
-                    <h4 class="portf-work-test">Веб-сайт</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(7).jpg" alt="Видавництво Limited Edition" class="portf-work-img">
-                    <h3 class="portf-work-name">Видавництво Limited Edition</h3>
-                    <h4 class="portf-work-test">Дизайн</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(8).jpg" alt="Проект LAB" class="portf-work-img">
-                    <h3 class="portf-work-name">Проект LAB</h3>
-                    <h4 class="portf-work-test">Маркетинг</h4>
-                </li>
-                <li class="portf-work-item">
-                    <img src="./img/img(9).jpg" alt="Growing Business" class="portf-work-img">
-                    <h3 class="portf-work-name">Growing Business</h3>
-                    <h4 class="portf-work-test">Застосунок</h4>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="projection">
+                    <li class="projection__item">
+                        <img src="./img/technocrat.jpg" alt="Технокряк" class="projection__img">
+                        <h3 class="projection__name">Технокряк</h3>
+                        <h4 class="projection__text">Веб-сайт</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/poster.jpg" alt="Постер New Orlean vs Golden Star" class="projection__img">
+                        <h3 class="projection__name">Постер New Orlean vs Golden Star</h3>
+                        <h4 class="projection__text">Дизайн</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/restoran.jpg" alt="Ресторан Seafood" class="projection__img">
+                        <h3 class="projection__name">Ресторан Seafood</h3>
+                        <h4 class="projection__text">Застосунок</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/progect-prime.jpg" alt="Проект Prime" class="projection__img">
+                        <h3 class="projection__name">Проект Prime</h3>
+                        <h4 class="projection__text">Маркетинг</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/box.jpg" alt="Проект Boxes" class="projection__img">
+                        <h3 class="projection__name">Проект Boxes</h3>
+                        <h4 class="projection__text">Застосунок</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/inspiration.jpg" alt="Inspiration has no Borders" class="projection__img">
+                        <h3 class="projection__name">Inspiration has no Borders</h3>
+                        <h4 class="projection__text">Веб-сайт</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/limited-edition.jpg" alt="Видавництво Limited Edition" class="projection__img">
+                        <h3 class="projection__name">Видавництво Limited Edition</h3>
+                        <h4 class="projection__text">Дизайн</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/progect.jpg" alt="Проект LAB" class="projection__img">
+                        <h3 class="projection__name">Проект LAB</h3>
+                        <h4 class="projection__text">Маркетинг</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                    <li class="projection__item">
+                        <img src="./img/growing-business.jpg" alt="Growing Business" class="projection__img">
+                        <h3 class="projection__name">Growing Business</h3>
+                        <h4 class="projection__text">Застосунок</h4>
+                        <p class="projection__overlay">Технокрик це сучасний майданчик поширення коронавірусу. Компанії
+                            використовують цю платформу для цифрового шпигунства та атак на захищені сервери
+                            конкурентів.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <!-- секція футер -->
-    <footer>
-        <p class="footer-logo">
-            <span class="logo-color">Web</span>Studio
-        </p>
-        <address class="footer-address">
-            <a href="/" class="address-link">м. Київ, пр-т Лесі Українки, 26</a>
-        </address>
-        <ul class="footer-list">
-            <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="footer-email">info@example.com</a>
-            </li>
-            <li class="footer-item">
-                <a href="tel:+380961111111" class="footer-contacts">+38 099 111 11 11</a>
-            </li>
-        </ul>
+
+    <footer class="footer-sheet">
+        <section class="footer-sheet__section">
+            <div class="container">
+                <div class="footer-sheet__container">
+                    <div class="div-sheet__logo">
+                        <p class="footer-sheet__logo">
+                            <span class="footer-sheet__blue">Web</span>Studio
+                        </p>
+                        <ul class="footer-sheet__list">
+                            <li class="footer-sheet__item">
+                                <address class="footer-sheet__address">м. Київ, пр-т Лесі Українки, 26</address>
+                            </li>
+                            <li class="footer-sheet__item">
+                                <a href="mailto:info@devstudio.com" class="footer-sheet__email">info@example.com</a>
+                            </li>
+                            <li class="footer-sheet__item">
+                                <a href="tel:+380961111111" class="footer-sheet__contacts">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="div-sheet__icon">
+                        <p class="footer-sheet__title">Приєднуйтесь</p>
+                        <ul class="icon">
+                            <li class="icon__item">
+                                <svg class="icon__svg" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </li>
+                            <li class="icon__item">
+                                <svg class="icon__svg" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </li>
+                            <li class="icon__item">
+                                <svg class="icon__svg" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </li>
+                            <li class="icon__item">
+                                <svg class="icon__svg" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sheet__mailing-list">
+                        <h2 class="footer-sheet__title2">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+                        <form class="footer-form">
+                            <input type="email" class="footer-form__field" placeholder="E-mail" required>
+                            <button class="footer-form__button">
+                                Підписатись
+                                <svg class="footer-form__send" width="24" height="24">
+                                    <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </footer>
 </body>
 
