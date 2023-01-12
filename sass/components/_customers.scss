@@ -1,0 +1,46 @@
+.customers-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-section__titel {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+}
+
+.customers-section__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 1170px;
+}
+
+.customers-section__item {
+    height: 90px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: 0.2s;
+    color: #afb1b8;
+    transition: all ease 0.3s;
+}
+
+.customers-section__item:hover {
+    color: #2196f3;
+    border-color: #2196f3;
+    transform: skew(5deg, 15deg)
+}
+
+.customers-section__icon {
+    fill: currentColor;
+    transition: 0.2s;
+}
