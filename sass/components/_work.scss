@@ -3,19 +3,17 @@
 }
 
 .work-section__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex
     margin-top: 50px;
 }
 
 .work-section__title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $team-texts-color;
     margin-bottom: 50px;
 }
 
@@ -26,24 +24,20 @@
 
 .work-section__item {
     position: relative;
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @extend %text
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $secondary-texts-color;
 }
 
 .work-section__item::before {
     content: 'Десктопні додатки';
-    display: flex;
     position: absolute;
     bottom: 4px;
     background-color: rgba(47, 48, 58, 0.8);
-    justify-content: center;
-    align-items: center;
+    @extend %flex
     width: 100%;
     height: 70px;
 }
@@ -57,12 +51,10 @@
 }
 
 .work-section__text {
-    font-family: "Roboto";
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @extend %text
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $secondary-texts-color;
 }

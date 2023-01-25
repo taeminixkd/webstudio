@@ -26,23 +26,21 @@
 }
 
 .footer-sheet__address {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: white;
+    color: $secondary-texts-color;
     text-decoration: none;
 }
 
 .footer-sheet__contacts {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
     display: block;
 }
@@ -53,43 +51,40 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: white;
+    color: $secondary-texts-color;
     text-decoration: none;
 }
 
 .footer-sheet__blue {
-    color: #2196F3;
+    color: $hover-texts-color;
 }
 
 .footer-sheet__email {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
     display: block;
 }
 
 .footer-sheet__email:hover {
-    color: #2196F3;
+    color: $hover-texts-color;
     transform: scale(1.2);
 }
 
 .footer-sheet__contacts:hover {
-    color: #2196F3;
+    color: $hover-texts-color;
     transform: scale(1.2);
 }
 
 .footer-sheet__title {
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @extend %text
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $secondary-texts-color;
 }
 
 .icon {
@@ -102,7 +97,7 @@
 }
 
 .icon__svg {
-    fill: #FFFFFF;
+    fill: $secondary-texts-color;
 }
 
 .icon__item {
@@ -110,14 +105,12 @@
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
 .icon__item:hover {
-    background: #2196F3;
+    background: $hover-texts-color;
     transform: rotate(1800deg);
 }
 
@@ -127,18 +120,15 @@
 }
 
 .footer-sheet__title2 {
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @extend %text
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $secondary-texts-color;
 }
 
 .footer-form {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex
     width: 570px;
     margin-top: 20px;
 }
@@ -150,7 +140,6 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -161,28 +150,24 @@
 }
 
 .footer-form__field:hover {
-    border-color: #2196F3;
+    border-color: $hover-texts-color;
 }
 
 .footer-form__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex
     width: 200px;
     height: 50px;
-    background: #2196F3;
+    background: $hover-texts-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     border: 0;
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $secondary-texts-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }
 
@@ -191,7 +176,7 @@
 }
 
 .footer-form__send {
-    fill: #FFFFFF;
+    fill: $secondary-texts-color;
     margin-left: 12px;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 }

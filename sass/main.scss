@@ -1,5 +1,8 @@
 @import "./base/reset"; 
 @import "./base/commons";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/benefits";
@@ -7,6 +10,4 @@
 @import "./components/team";
 @import "./components/customers";
 @import "./components/form";
-@import "./components/button";
-@import "./components/projection";
 @import "./components/footer";
