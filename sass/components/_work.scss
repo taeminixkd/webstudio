@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .work-section {
     padding: 94px 0;
 }
@@ -58,73 +57,4 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;
-=======
-.work-section {
-    padding: 94px 0;
-}
-
-.work-section__list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.work-section__title {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 50px;
-}
-
-.work-section__img {
-    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-    mix-blend-mode: normal;
-}
-
-.work-section__item {
-    position: relative;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.work-section__item::before {
-    content: 'Десктопні додатки';
-    display: flex;
-    position: absolute;
-    bottom: 4px;
-    background-color: rgba(47, 48, 58, 0.8);
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-}
-
-.work-section__item:nth-child(2)::before {
-    content: 'Мобільні додатки';
-}
-
-.work-section__item:nth-child(3)::before {
-    content: 'Дизайнерські рішення';
-}
-
-.work-section__text {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
->>>>>>> b3331e5aba54747e8189b404f6cb4eac5626215a
 }
