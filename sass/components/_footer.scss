@@ -95,8 +95,6 @@
     }
 }
 
-
-
 .icon__item {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -152,12 +150,7 @@
 }
 
 .footer-form__button {
-    @extend %flex width: 200px;
-    height: 50px;
-    background: $hover-texts-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    border: 0;
+    @extend %flex    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -166,6 +159,7 @@
     letter-spacing: 0.06em;
     color: $secondary-texts-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    @include button($width-button: 200px)
 
     &:hover {
         transform: scale(1.1);

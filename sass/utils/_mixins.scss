@@ -1,0 +1,8 @@
+@mixin button($width-button) {
+    background-color: $hover-texts-color;
+    border: 0;
+    box-shadow: 0px 4px 4px $hero-box-shadow;
+    border-radius: 4px;
+    width: $width-button;
+    height: 50px;
+}
