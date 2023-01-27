@@ -1,42 +1,39 @@
 .customers-section {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.customers-section__titel {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $team-texts-color;
-    text-align: center;
-}
+    &__titel {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $team-texts-color;
+        text-align: center;
+    }
 
-.customers-section__list {
-    @extend %flex
-    margin-top: 50px;
-    width: 1170px;
+    &__list {
+        @extend %flex margin-top: 50px;
+        width: 1170px;
+    }
+
+    &__icon {
+        fill: currentColor;
+        transition: 0.2s;
+    }
 }
 
 .customers-section__item {
     height: 90px;
     width: 170px;
-    @extend %flex
-    border: 1px solid $customers-texts-color;
+    @extend %flex border: 1px solid $customers-texts-color;
     border-radius: 4px;
     transition: 0.2s;
     color: $customers-texts-color;
     transition: all ease 0.3s;
-}
 
-.customers-section__item:hover {
-    color: $hover-texts-color;
-    border-color: $hover-texts-color;
-    transform: skew(5deg, 15deg)
-}
-
-.customers-section__icon {
-    fill: currentColor;
-    transition: 0.2s;
+    &:hover {
+        transform: skew(5deg, 15deg) color: $hover-texts-color;
+        border-color: $hover-texts-color;
+    }
 }

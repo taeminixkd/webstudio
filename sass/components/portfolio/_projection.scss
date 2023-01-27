@@ -1,7 +1,33 @@
 .projection {
     flex-wrap: wrap;
-    @extend %flex
-    margin-top: 50px;
+    @extend %flex margin-top: 50px;
+
+    &__img {
+        background: url(portfolio1.jpg);
+        padding-bottom: 20px;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $team-texts-color;
+        margin-left: 24px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: $main-texts-color;
+        margin-top: 4px;
+        margin-left: 24px;
+    }
+
 }
 
 .projection__item {
@@ -10,45 +36,19 @@
     margin-top: 0;
     position: relative;
     transition: all ease-out 0.3s;
-}
 
-.projection__item:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
-.projection__item:nth-child(n+4) {
-    margin-top: 30px;
-}
+    &:nth-child(n+4) {
+        margin-top: 30px;
+    }
 
-.projection__item:nth-child(n+4) {
-    margin-top: 30px;
-}
-
-.projection__img {
-    background: url(portfolio1.jpg);
-    padding-bottom: 20px;
-}
-
-.projection__name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $team-texts-color;
-    margin-left: 24px;
-}
-
-.projection__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: $main-texts-color;
-    margin-top: 4px;
-    margin-left: 24px;
+    &:nth-child(n+4) {
+        margin-top: 30px;
+    }
 }
 
 .projection__overlay {

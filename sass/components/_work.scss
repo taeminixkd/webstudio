@@ -1,10 +1,9 @@
 .work-section {
     padding: 94px 0;
-}
 
-.work-section__list {
-    @extend %flex
-    margin-top: 50px;
+    &__list {
+        @extend %flex margin-top: 50px;
+    }
 }
 
 .work-section__title {
@@ -25,35 +24,32 @@
 .work-section__item {
     position: relative;
     font-weight: 700;
-    @extend %text
-    text-align: center;
+    @extend %text text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;
-}
 
-.work-section__item::before {
-    content: 'Десктопні додатки';
-    position: absolute;
-    bottom: 4px;
-    background-color: rgba(47, 48, 58, 0.8);
-    @extend %flex
-    width: 100%;
-    height: 70px;
-}
+    &:nth-child(2)::before {
+        content: 'Мобільні додатки';
+    }
 
-.work-section__item:nth-child(2)::before {
-    content: 'Мобільні додатки';
-}
+    &:nth-child(3)::before {
+        content: 'Дизайнерські рішення';
+    }
 
-.work-section__item:nth-child(3)::before {
-    content: 'Дизайнерські рішення';
+    &::before {
+        content: 'Десктопні додатки';
+        position: absolute;
+        bottom: 4px;
+        background-color: rgba(47, 48, 58, 0.8);
+        @extend %flex width: 100%;
+        height: 70px;
+    }
 }
 
 .work-section__text {
     font-weight: 700;
-    @extend %text
-    text-align: center;
+    @extend %text text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;

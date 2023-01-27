@@ -1,9 +1,27 @@
 .benefits-section {
     padding-top: 94px;
-}
 
-.benefits-section__list {
-    @extend %flex
+    &__list {
+        @extend %flex
+    }
+
+    &__title {
+        font-weight: 700;
+        @extend %text letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $team-texts-color;
+        width: 270px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $main-texts-color;
+        width: 270px;
+        margin-top: 10px;
+    }
 }
 
 .benefits-section__item:before {
@@ -33,23 +51,4 @@
 
 .benefits-section__item:nth-child(4)::before {
     background-image: url("../img/astronaut.png");
-}
-
-.benefits-section__title {
-    font-weight: 700;
-    @extend %text
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $team-texts-color;
-    width: 270px;
-}
-
-.benefits-section__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $main-texts-color;
-    width: 270px;
-    margin-top: 10px;
 }

@@ -2,10 +2,14 @@
     background-color: #2F303A;
     padding: 60px 0;
     margin-top: 94px;
-}
 
-.footer-sheet__container {
-    display: flex;
+    &__container {
+        display: flex;
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
 }
 
 .div-sheet__icon {
@@ -13,16 +17,12 @@
     padding-top: 12px;
 }
 
-.footer-sheet__list {
-    margin-top: 20px;
-}
-
 .footer-sheet__item {
     margin-top: 9px;
-}
 
-.footer-sheet__item:first-child {
-    margin-top: 0;
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 .footer-sheet__address {
@@ -43,6 +43,11 @@
     color: $footer-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
     display: block;
+
+    &:hover {
+        color: $hover-texts-color;
+        transform: scale(1.2);
+    }
 }
 
 .footer-sheet__logo {
@@ -67,22 +72,16 @@
     color: $footer-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
     display: block;
-}
 
-.footer-sheet__email:hover {
-    color: $hover-texts-color;
-    transform: scale(1.2);
-}
-
-.footer-sheet__contacts:hover {
-    color: $hover-texts-color;
-    transform: scale(1.2);
+    &:hover {
+        color: $hover-texts-color;
+        transform: scale(1.2);
+    }
 }
 
 .footer-sheet__title {
     font-weight: 700;
-    @extend %text
-    letter-spacing: 0.03em;
+    @extend %text letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;
 }
@@ -90,28 +89,29 @@
 .icon {
     display: flex;
     padding-top: 20px;
+
+    &__svg {
+        fill: $secondary-texts-color;
+    }
 }
 
-.icon__item:not(:last-child) {
-    margin-right: 10px;
-}
 
-.icon__svg {
-    fill: $secondary-texts-color;
-}
 
 .icon__item {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    @extend %flex
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-}
+    @extend %flex transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 
-.icon__item:hover {
-    background: $hover-texts-color;
-    transform: rotate(1800deg);
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        background: $hover-texts-color;
+        transform: rotate(1800deg);
+    }
 }
 
 .footer-sheet__mailing-list {
@@ -121,41 +121,38 @@
 
 .footer-sheet__title2 {
     font-weight: 700;
-    @extend %text
-    letter-spacing: 0.03em;
+    @extend %text letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;
 }
 
 .footer-form {
-    @extend %flex
-    width: 570px;
+    @extend %flex width: 570px;
     margin-top: 20px;
-}
 
-.footer-form__field {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    padding: 15px 16px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    transition: 0.2s;
-}
+    &__field {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        padding: 15px 16px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        transition: 0.2s;
 
-.footer-form__field:hover {
-    border-color: $hover-texts-color;
+        &:hover {
+            border-color: $hover-texts-color;
+        }
+    }
 }
 
 .footer-form__button {
-    @extend %flex
-    width: 200px;
+    @extend %flex width: 200px;
     height: 50px;
     background: $hover-texts-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -169,18 +166,18 @@
     letter-spacing: 0.06em;
     color: $secondary-texts-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-}
 
-.footer-form__button:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .footer-form__send {
     fill: $secondary-texts-color;
     margin-left: 12px;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-}
 
-.footer-form__send:hover {
-    transform: rotate(720deg);
+    &:hover {
+        transform: rotate(720deg);
+    }
 }
