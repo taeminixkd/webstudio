@@ -13,8 +13,9 @@
     }
 
     &__list {
-        @extend %flex margin-top: 50px;
+        margin-top: 50px;
         width: 1170px;
+        @extend %flex;
     }
 
     &__icon {
@@ -26,14 +27,16 @@
 .customers-section__item {
     height: 90px;
     width: 170px;
-    @extend %flex border: 1px solid $customers-texts-color;
+    border: 1px solid $customers-texts-color;
     border-radius: 4px;
     transition: 0.2s;
     color: $customers-texts-color;
     transition: all ease 0.3s;
-
+    @extend %flex; 
+    
     &:hover {
-        transform: skew(5deg, 15deg) color: $hover-texts-color;
+        transform: skew(5deg, 15deg);
+        color: $hover-texts-color;
         border-color: $hover-texts-color;
     }
 }

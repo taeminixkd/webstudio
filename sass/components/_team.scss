@@ -4,7 +4,8 @@
 }
 
 .employee {
-    @extend %flex
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
@@ -69,8 +70,9 @@
     background-color: $secondary-texts-color;
     width: 44px;
     height: 44px;
-    @extend %flex
+    @extend %flex;
     transition: all ease 0.3s;
+
     &:not(:last-child) {
         margin-right: 10px;
     }

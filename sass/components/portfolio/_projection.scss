@@ -1,6 +1,7 @@
 .projection {
     flex-wrap: wrap;
-    @extend %flex margin-top: 50px;
+    @extend %flex;
+    margin-top: 50px;
 
     &__img {
         background: url(portfolio1.jpg);

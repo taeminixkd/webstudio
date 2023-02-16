@@ -3,19 +3,18 @@
 }
 
 .header-sheet__container {
-    @extend %flex
-    height: inherit;
+    @extend %flex;
 }
 
 .header-sheet__navigation {
-    @extend %flex
-    -webkit-box-align: center;
+    @extend %flex;
 }
 
 .sheets {
-    @extend %flex
+    @extend %flex;
     width: 290px;
     margin-left: 93px;
+    
     &__overlay::after {
         content: '';
         display: block;
@@ -30,17 +29,19 @@
 }
 
 .contacts {
-    @extend %flex
+    @extend %flex;
     width: 333px;
     margin-left: 309px;
+
     &__tell {
         display: flex;
         font-weight: 500;
-        @extend %text
+        @extend %text;
         letter-spacing: 0.02em;
         color: $main-texts-color;
         text-decoration: none;
         align-items: center;
+
         &:hover {
             color: $hover-texts-color;
         }
@@ -48,11 +49,12 @@
     &__email {
         display: flex;
         font-weight: 500;
-        @extend %text
+        @extend %text;
         letter-spacing: 0.02em;
         color: $main-texts-color;
         text-decoration: none;
         align-items: center;
+
         &:hover {
             color: $hover-texts-color;
         }
@@ -75,14 +77,15 @@
 
 .sheets__link {
     font-weight: 500;
-    @extend %text
+    @extend %text;
     letter-spacing: 0.02em;
     color: $team-texts-color;
     text-decoration: none;
-    @extend %flex
+    @extend %flex;
     transition: 0.2s;
     position: relative;
     height: 100%;
+
     &:hover {
         color: $hover-texts-color;
     }
@@ -95,9 +98,11 @@
 .contacts__icon {
     fill: $main-texts-color;
     margin-right: 10px;
+
     & {
         fill: currentColor;
         transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+
         &:hover {
             transform: rotate(3600deg);
         }

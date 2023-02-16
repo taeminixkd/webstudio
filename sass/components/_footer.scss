@@ -81,7 +81,8 @@
 
 .footer-sheet__title {
     font-weight: 700;
-    @extend %text letter-spacing: 0.03em;
+    @extend %text; 
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;
 }
@@ -100,7 +101,8 @@
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    @extend %flex transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    @extend %flex; 
+    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 
     &:not(:last-child) {
         margin-right: 10px;
@@ -119,13 +121,15 @@
 
 .footer-sheet__title2 {
     font-weight: 700;
-    @extend %text letter-spacing: 0.03em;
+    @extend %text;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-texts-color;
 }
 
 .footer-form {
-    @extend %flex width: 570px;
+    @extend %flex;
+    width: 570px;
     margin-top: 20px;
 
     &__field {
@@ -149,8 +153,7 @@
     }
 }
 
-.footer-form__button {
-    @extend %flex    
+.footer-form__button {   
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -159,7 +162,8 @@
     letter-spacing: 0.06em;
     color: $secondary-texts-color;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-    @include button($width-button: 200px)
+    @include button($width-button: 200px);
+    @extend %flex;
 
     &:hover {
         transform: scale(1.1);
