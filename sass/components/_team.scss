@@ -1,12 +1,17 @@
 .team-section {
     background-color: #f5f4fa;
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 .employee {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .employee__work {
@@ -15,6 +20,15 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .employee__name {
@@ -25,6 +39,10 @@
     letter-spacing: 0.03em;
     color: $team-texts-color;
     margin-top: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 }
 
 .employee__description {
@@ -44,20 +62,34 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $team-texts-color;
+
+
 }
 
 .employee__img {
     background: url(4853.jpg);
-    width: 270px;
-    height: 260px;
+    width: 450px;
+    height: 460px;
     border-radius: 0px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
 }
 
 .employee__social {
     display: flex;
     padding-top: 16px;
-    padding-left: 32px;
+    padding-left: 0;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    justify-content: center;
+
 }
 
 .employee__icon {
@@ -76,6 +108,7 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
+
     &:hover {
         background-color: $hover-texts-color;
         transform: scale(1.3, 1.3)

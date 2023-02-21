@@ -2,6 +2,8 @@
     background-color: #2F303A;
     padding: 60px 0;
     margin-top: 94px;
+    display: flex;
+    justify-content: space-between;
 
     &__container {
         display: flex;
@@ -13,7 +15,6 @@
 }
 
 .div-sheet__icon {
-    margin-left: 70px;
     padding-top: 12px;
 }
 
@@ -115,7 +116,6 @@
 }
 
 .footer-sheet__mailing-list {
-    margin-left: 93px;
     padding-top: 12px;
 }
 
@@ -164,6 +164,8 @@
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
     @include button($width-button: 200px);
     @extend %flex;
+
+
 
     &:hover {
         transform: scale(1.1);

@@ -8,6 +8,14 @@
     &__list {
         @extend %flex;
         flex-wrap: wrap;
+        align-items: flex-start;
+
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 768px) {
+        }
     }
 
     &__title {
@@ -32,18 +40,15 @@
         color: $main-texts-color;
         width: 400px;
         margin-top: 10px;
+        margin-bottom: 30px;
+        
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
 
         @media screen and (min-width: 1200px) {
             width: 270px;
         }
-    }
-}
-
-.benefits-section__item {
-    padding-top: 30px;
-
-    &:first-child {
-        padding-top: 0;
     }
 }
 
@@ -59,9 +64,14 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin-right: 30px;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 270px;
-        margin-right: 20px;
     }
 }
 
@@ -71,6 +81,11 @@
 
 .benefits-section__item:nth-child(2)::before {
     background-image: url("../img/clock.png");
+    margin-right: 0;
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
 }
 
 .benefits-section__item:nth-child(3)::before {
@@ -79,4 +94,5 @@
 
 .benefits-section__item:nth-child(4)::before {
     background-image: url("../img/astronaut.png");
+    margin-right: 0;
 }
