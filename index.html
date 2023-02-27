@@ -8,7 +8,7 @@
   <title>WebStudio</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-<link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
 </head>
@@ -16,8 +16,8 @@
 <body>
 
   <!-- секціця хедер -->
-<!-- 
-  <header class="header-sheet">
+
+  <!-- <header class="header-sheet">
     <div class="header-sheet__container container">
       <a href="./index.html" class="header-sheet__logo">Web<span class="header-sheet__black">Studio</span></a>
       <nav class="header-sheet__navigation">
@@ -312,7 +312,8 @@
           <li class="form-section__item">
             <label for="comment" class="form-section__sub-title"></label>
             <input type="checkbox" class="form-section__checkbox" id="comment" required>
-            <p class="form-text">Погоджуюсь з розсилкою і приймаю <a class="form-section__link" href="./"> Умови договору </a>
+            <p class="form-text">Погоджуюсь з розсилкою і приймаю <a class="form-section__link" href="./"> Умови
+                договору </a>
             </p>
           </li>
         </ul>
@@ -323,11 +324,11 @@
 
   <!-- секція футер -->
 
-  <!-- <footer class="footer-sheet">
+  <footer class="footer-sheet">
     <section class="footer-sheet__section">
       <div class="container">
-        <div class="footer-sheet__container">
-          <div class="div-sheet__logo">
+        <ul class="footer-list">
+          <li class="footer-item">
             <p class="footer-sheet__logo">
               <span class="footer-sheet__blue">Web</span>Studio
             </p>
@@ -342,8 +343,8 @@
                 <a href="tel:+380961111111" class="footer-sheet__contacts">+38 099 111 11 11</a>
               </li>
             </ul>
-          </div>
-          <div class="div-sheet__icon">
+          </li>
+          <li class="footer-item">
             <p class="footer-sheet__title">Приєднуйтесь</p>
             <ul class="icon">
               <li class="icon__item">
@@ -367,22 +368,23 @@
                 </svg>
               </li>
             </ul>
-          </div>
+          </li>
           <div class="footer-sheet__mailing-list">
             <h2 class="footer-sheet__title2">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
             <form class="footer-form">
-                <input type="email" class="footer-form__field" placeholder="E-mail" required>
-                <button class="footer-form__button">
-                    Підписатись
-                    <svg class="footer-form__send" width="24" height="24">
-                        <use href="./img/symbol-defs.svg#icon-icon-send"></use>
-                    </svg>
-                </button>
+              <input type="email" class="footer-form__field" placeholder="E-mail" required>
+              <button class="footer-form__button">
+                Підписатись
+                <svg class="footer-form__send" width="24" height="24">
+                  <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </form>
-        </div>
-        </div>
+          </div>
+        </ul>
       </div>
-  </footer> -->
+    </section>
+  </footer>
   <script>
     const refs = {
       openModalBtn: document.querySelector("[data-open-modal]"),

@@ -1,11 +1,32 @@
+.projection-section {
+    padding-bottom: 50px 0;
+}
+
 .projection {
-    flex-wrap: wrap;
+    margin-top: 40px;
     @extend %flex;
-    margin-top: 50px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 
     &__img {
         background: url(portfolio1.jpg);
         padding-bottom: 20px;
+        width: 450px;
+        height: 294px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 370px;
+        }
     }
 
     &__name {
@@ -37,6 +58,16 @@
     margin-top: 0;
     position: relative;
     transition: all ease-out 0.3s;
+    width: 450px;
+    height: 404px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 
     &:hover {
         transform: scale(1.1);
@@ -55,7 +86,7 @@
 .projection__overlay {
     position: absolute;
     background: rgba(33, 150, 243, 0.9);
-    width: 370px;
+    width: 450px;
     height: 294px;
     font-weight: 400;
     font-size: 18px;
@@ -67,6 +98,14 @@
     opacity: 0;
     transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
     transform: scale(1.1) rotate(10deg);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }
 
 .projection__item:hover>.projection__overlay {

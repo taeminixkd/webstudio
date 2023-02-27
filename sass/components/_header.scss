@@ -1,17 +1,36 @@
 .header-sheet {
     height: 80px;
-}
 
-.header-sheet__container {
-    @extend %flex;
+    &__container {
+        display: flex;
+        align-items: center;    
+        height: inherit;
 }
+    
+    &__navigation {
+        display: flex;
+        align-items: center;
+        -webkit-box-align: center;
+    }
 
-.header-sheet__navigation {
-    @extend %flex;
+    &__logo {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $hover-texts-color;
+        text-decoration: none;
+    }
+    
+    &__black {
+        color: $team-texts-color;
+    }
 }
 
 .sheets {
-    @extend %flex;
+    display: flex;
+    justify-content: space-between;
     width: 290px;
     margin-left: 93px;
     
@@ -26,10 +45,27 @@
         border-radius: 5px;
         margin-top: 30px;
     }
+
+    &__link {
+        font-weight: 500;
+        @extend %text;
+        letter-spacing: 0.02em;
+        color: $team-texts-color;
+        text-decoration: none;
+        @extend %flex;
+        transition: 0.2s;
+        position: relative;
+        height: 100%;
+    
+        &:hover {
+            color: $hover-texts-color;
+        }
+    }
 }
 
 .contacts {
-    @extend %flex;
+    display: flex;
+    justify-content: space-between;
     width: 333px;
     margin-left: 309px;
 
@@ -59,59 +95,31 @@
             color: $hover-texts-color;
         }
     }
-}
 
-.header-sheet__logo {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $hover-texts-color;
-    text-decoration: none;
-}
+    &__icon {
+        fill: $main-texts-color;
+        margin-right: 10px;
+    
+        & {
+            fill: currentColor;
+            transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 
-.header-sheet__black {
-    color: $team-texts-color;
-}
-
-.sheets__link {
-    font-weight: 500;
-    @extend %text;
-    letter-spacing: 0.02em;
-    color: $team-texts-color;
-    text-decoration: none;
-    @extend %flex;
-    transition: 0.2s;
-    position: relative;
-    height: 100%;
-
-    &:hover {
-        color: $hover-texts-color;
+            &:hover {
+                transform: rotate(3600deg);
+            }
+        }
     }
+    
+    &__item {
+        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+    
 }
 
 .sheets__link:hover>svg {
     fill: $hover-texts-color;
 }
 
-.contacts__icon {
-    fill: $main-texts-color;
-    margin-right: 10px;
-
-    & {
-        fill: currentColor;
-        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-
-        &:hover {
-            transform: rotate(3600deg);
-        }
-    }
-}
-
-.contacts__item {
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-    &:hover {
-        transform: translateY(-10px);
-    }
-}

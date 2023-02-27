@@ -1,91 +1,139 @@
-.footer-sheet__section {
+.footer-sheet {
     background-color: #2F303A;
     padding: 60px 0;
     margin-top: 94px;
-    display: flex;
-    justify-content: space-between;
-
-    &__container {
-        display: flex;
-    }
+    margin-right: 40px;
 
     &__list {
         margin-top: 20px;
     }
+
+    &__item {
+        margin-top: 9px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $secondary-texts-color;
+        text-decoration: none;
+    }
+
+    &__contacts {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $footer-color;
+        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+        display: block;
+
+        &:hover {
+            color: $hover-texts-color;
+            transform: scale(1.2);
+        }
+    }
+
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $secondary-texts-color;
+        text-decoration: none;
+    }
+
+    &__blue {
+        color: $hover-texts-color;
+    }
+
+    &__email {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $footer-color;
+        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+        display: block;
+
+        &:hover {
+            color: $hover-texts-color;
+            transform: scale(1.2);
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        @extend %text;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-texts-color;
+    }
+
+    &__mailing-list {
+        padding-top: 12px;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 12px;
+        }
+    }
+
+    &__title2 {
+        font-weight: 700;
+        @extend %text;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-texts-color;
+        text-align: center
+    }
 }
 
-.div-sheet__icon {
-    padding-top: 12px;
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {}
 }
 
-.footer-sheet__item {
-    margin-top: 9px;
+.footer-item {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
     &:first-child {
-        margin-top: 0;
+        @media screen and (min-width: 768px) {
+            margin-right: 165px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
     }
-}
 
-.footer-sheet__address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $secondary-texts-color;
-    text-decoration: none;
-}
-
-.footer-sheet__contacts {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $footer-color;
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-    display: block;
-
-    &:hover {
-        color: $hover-texts-color;
-        transform: scale(1.2);
+    @media screen and (min-width: 768px) {
+        text-align: left;
     }
-}
 
-.footer-sheet__logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $secondary-texts-color;
-    text-decoration: none;
-}
-
-.footer-sheet__blue {
-    color: $hover-texts-color;
-}
-
-.footer-sheet__email {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $footer-color;
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-    display: block;
-
-    &:hover {
-        color: $hover-texts-color;
-        transform: scale(1.2);
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
     }
-}
-
-.footer-sheet__title {
-    font-weight: 700;
-    @extend %text; 
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $secondary-texts-color;
 }
 
 .icon {
@@ -95,42 +143,38 @@
     &__svg {
         fill: $secondary-texts-color;
     }
-}
 
-.icon__item {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    @extend %flex; 
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    &__item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        @extend %flex;
+        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 
-    &:not(:last-child) {
-        margin-right: 10px;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background: $hover-texts-color;
+            transform: rotate(1800deg);
+        }
     }
-
-    &:hover {
-        background: $hover-texts-color;
-        transform: rotate(1800deg);
-    }
-}
-
-.footer-sheet__mailing-list {
-    padding-top: 12px;
-}
-
-.footer-sheet__title2 {
-    font-weight: 700;
-    @extend %text;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $secondary-texts-color;
 }
 
 .footer-form {
-    @extend %flex;
-    width: 570px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        width: 570px;
+        flex-direction: row;
+        margin-top: 0px;
+    }
 
     &__field {
         width: 358px;
@@ -146,38 +190,37 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         transition: 0.2s;
+        margin: 20px 0;
 
         &:hover {
             border-color: $hover-texts-color;
         }
     }
-}
 
-.footer-form__button {   
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $secondary-texts-color;
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
-    @include button($width-button: 200px);
-    @extend %flex;
+    &__button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $secondary-texts-color;
+        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+        @include button($width-button: 200px);
+        @extend %flex;
 
-
-
-    &:hover {
-        transform: scale(1.1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
-}
 
-.footer-form__send {
-    fill: $secondary-texts-color;
-    margin-left: 12px;
-    transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+    &__send {
+        fill: $secondary-texts-color;
+        margin-left: 12px;
+        transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
 
-    &:hover {
-        transform: rotate(720deg);
+        &:hover {
+            transform: rotate(720deg);
+        }
     }
 }
