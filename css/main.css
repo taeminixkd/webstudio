@@ -466,7 +466,7 @@ p, h1, h2, h3, h4 {
 
 .customers-section {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .customers-section__titel {
   font-weight: 700;
@@ -504,10 +504,8 @@ p, h1, h2, h3, h4 {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
-  .customers-section__item:nth-child(2n) {
-    margin-right: 0;
-  }
+.customers-section__item:nth-child(2n) {
+  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .customers-section__item:nth-child(2n) {
@@ -523,6 +521,12 @@ p, h1, h2, h3, h4 {
   .customers-section__item:nth-child(3n) {
     margin-right: 30px;
   }
+}
+.customers-section__item:nth-child(5) {
+  margin-bottom: 0;
+}
+.customers-section__item:nth-child(6) {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .customers-section__item {
@@ -714,8 +718,6 @@ p, h1, h2, h3, h4 {
 .footer-sheet {
   background-color: #2F303A;
   padding: 60px 0;
-  margin-top: 94px;
-  margin-right: 40px;
 }
 .footer-sheet__list {
   margin-top: 20px;
