@@ -3,11 +3,29 @@
 }
 
 .but {
-    width: 326px;
+    width: 400px;
+    height: auto;
     flex-wrap: wrap;
+    justify-content: start;
+    display: flex;
     padding-left: 15px;
-    padding-top: 45px;
-    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 8px;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
 
     &__button {
         font-weight: 500;
@@ -31,8 +49,3 @@
         }
     }
 }
-
-
-
-
-

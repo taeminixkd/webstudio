@@ -74,6 +74,14 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $secondary-texts-color;
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
 
     &__mailing-list {
@@ -90,7 +98,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $secondary-texts-color;
-        text-align: center
+        text-align: left;
     }
 }
 
@@ -105,8 +113,6 @@
         align-items: flex-start;
         flex-direction: row;
     }
-
-    @media screen and (min-width: 1200px) {}
 }
 
 .footer-item {

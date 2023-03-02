@@ -135,6 +135,14 @@
     
     &__text {
         margin-left: 8.38px;
+        @media screen and (min-width: 768px) {
+            width: 346px;
+            height: 14px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+    
+        }
     }
 
     &__container:hover>&__icon {

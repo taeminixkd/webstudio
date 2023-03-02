@@ -39,7 +39,6 @@ p, h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .footer-sheet__title2, .footer-sheet__title, .form-section__textarea, .work-section__text, .work-section__item, .benefits-section__title, .contacts__email, .contacts__tell, .sheets__link {
@@ -507,12 +506,12 @@ p, h1, h2, h3, h4 {
 .customers-section__item:nth-child(2n) {
   margin-right: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .customers-section__item:nth-child(2n) {
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .customers-section__item:nth-child(3n) {
     margin-right: 0;
   }
@@ -667,6 +666,12 @@ p, h1, h2, h3, h4 {
 .form-section__text {
   margin-left: 8.38px;
 }
+@media screen and (min-width: 768px) {
+  .form-section__text {
+    width: 346px;
+    height: 14px;
+  }
+}
 .form-section__container:hover > .form-section__icon {
   fill: #2196F3;
   transition: 0.2s;
@@ -781,6 +786,16 @@ p, h1, h2, h3, h4 {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .footer-sheet__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-sheet__title {
+    text-align: start;
+  }
+}
 .footer-sheet__mailing-list {
   padding-top: 12px;
 }
@@ -794,7 +809,7 @@ p, h1, h2, h3, h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-list {
@@ -810,6 +825,7 @@ p, h1, h2, h3, h4 {
     flex-direction: row;
   }
 }
+
 .footer-item {
   margin-bottom: 60px;
   display: flex;
