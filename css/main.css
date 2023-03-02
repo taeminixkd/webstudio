@@ -166,6 +166,7 @@ p, h1, h2, h3, h4 {
 @media screen and (min-width: 1200px) {
   .hero-section {
     width: 100%;
+    height: 600px;
   }
 }
 .hero-section__button {
@@ -370,9 +371,14 @@ p, h1, h2, h3, h4 {
 
 .employee {
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
   flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .employee {
+    justify-content: space-between;
+  }
 }
 .employee__work {
   background: #ffffff;
@@ -592,11 +598,16 @@ p, h1, h2, h3, h4 {
 .form-section__item:last-child {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .form-section__item:last-child {
+    font-size: 14px;
+  }
 }
 .form-section__sub-title {
   font-weight: 400;
@@ -663,14 +674,9 @@ p, h1, h2, h3, h4 {
   width: 16px;
   height: 15px;
 }
-.form-section__text {
-  margin-left: 8.38px;
-}
-@media screen and (min-width: 768px) {
-  .form-section__text {
-    width: 346px;
-    height: 14px;
-  }
+.form-section__icon {
+  width: 11px;
+  height: 11px;
 }
 .form-section__container:hover > .form-section__icon {
   fill: #2196F3;
@@ -701,6 +707,10 @@ p, h1, h2, h3, h4 {
   line-height: 1.18;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+.form-text {
+  margin-left: 8.38px;
 }
 
 .overlay {

@@ -49,12 +49,20 @@
         &:last-child {
             font-family: 'Roboto';
             font-weight: 400;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: $main-texts-color;
             @extend %flex;
             margin-top: 20px;
+
+            @media screen and (min-width: 768px) {
+
+            }
+        
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
         }
     }
     
@@ -132,17 +140,10 @@
         width: 16px;
         height: 15px;
     }
-    
-    &__text {
-        margin-left: 8.38px;
-        @media screen and (min-width: 768px) {
-            width: 346px;
-            height: 14px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-    
-        }
+
+    &__icon {
+        width: 11px;
+        height: 11px;
     }
 
     &__container:hover>&__icon {
@@ -178,6 +179,10 @@
         letter-spacing: 0.06em;
         color: $secondary-texts-color;
     }
+}
+
+.form-text {
+    margin-left: 8.38px;
 }
 
 .overlay {

@@ -13,14 +13,20 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: $team-texts-color;
+
     }
 }
 
 .employee {
     display: flex;
-    justify-content: space-between;
+
     margin-top: 50px;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
 
     &__work {
         background: $secondary-texts-color;
@@ -29,7 +35,7 @@
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
         margin-bottom: 30px;
-        
+
 
         @media screen and (min-width: 768px) {
             margin-bottom: 30px;
