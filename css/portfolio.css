@@ -424,7 +424,12 @@ p, h1, h2, h3, h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sheet__title2 {
+    text-align: left;
+  }
 }
 
 .footer-list {
@@ -505,7 +510,7 @@ p, h1, h2, h3, h4 {
   }
 }
 .footer-form__field {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -519,6 +524,16 @@ p, h1, h2, h3, h4 {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.2s;
   margin: 20px 0;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__field {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__field {
+    width: 358px;
+  }
 }
 .footer-form__field:hover {
   border-color: #2196F3;
