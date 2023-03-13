@@ -3,14 +3,8 @@
 
     &__container {
         display: flex;
-        align-items: center;    
-        height: inherit;
-}
-    
-    &__navigation {
-        display: flex;
         align-items: center;
-        -webkit-box-align: center;
+        height: inherit;
     }
 
     &__logo {
@@ -22,18 +16,115 @@
         color: $hover-texts-color;
         text-decoration: none;
     }
-    
+
     &__black {
         color: $team-texts-color;
     }
 }
 
-.sheets {
-    display: flex;
-    justify-content: space-between;
-    width: 290px;
-    margin-left: 93px;
+.menu-list {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        -webkit-box-align: center;
+    }
+}
+
+.header-button {
+    display: block;
+    margin-left: 275px;
+    background-color: rgba(240, 255, 255, 0);
+    border: none;
+
+    @media screen and (min-width:490px) {
+        margin-left: 285px;
+    }
+
+    @media screen and (min-width:500px) {
+        margin-left: 300px;
+    }
+
+    @media screen and (min-width:510px) {
+        margin-left: 305px;
+    }
+
+    @media screen and (min-width:520px) {
+        margin-left: 320px;
+    }
+
+    @media screen and (min-width:540px) {
+        margin-left: 340px;
+    }
+
+    @media screen and (min-width:560px) {
+        margin-left: 360px;
+    }
+
+    @media screen and (min-width:580px) {
+        margin-left: 375px;
+    }
+
+    @media screen and (min-width:600px) {
+        margin-left: 395px;
+    }
+
+    @media screen and (min-width:620px) {
+        margin-left: 400px;
+    }
+
+    @media screen and (min-width:640px) {
+        margin-left: 420px;
+    }
+
+    @media screen and (min-width:660px) {
+        margin-left: 440px;
+    }
+
+    @media screen and (min-width:680px) {
+        margin-left: 460px;
+    }
     
+    @media screen and (min-width:700px) {
+        margin-left: 485px;
+    }
+
+    @media screen and (min-width:740px) {
+        margin-left: 520px;
+    }
+
+    @media screen and (min-width:750px) {
+        margin-left: 530px;
+    }
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.icon-menu {
+    display: flex;
+
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.sheets {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 283px;
+        margin-left: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 290px;
+        margin-left: 93px;
+    }
+
     &__overlay::after {
         content: '';
         display: block;
@@ -56,7 +147,7 @@
         transition: 0.2s;
         position: relative;
         height: 100%;
-    
+
         &:hover {
             color: $hover-texts-color;
         }
@@ -64,32 +155,51 @@
 }
 
 .contacts {
-    display: flex;
-    justify-content: space-between;
-    width: 333px;
-    margin-left: 309px;
+
+
+    @media screen and (min-width: 768px) {
+        margin-left: 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        width: 333px;
+        margin-left: 309px;
+    }
 
     &__tell {
         display: flex;
         font-weight: 500;
         @extend %text;
+        font-size: 12px;
         letter-spacing: 0.02em;
         color: $main-texts-color;
         text-decoration: none;
         align-items: center;
 
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
+
         &:hover {
             color: $hover-texts-color;
         }
     }
+
     &__email {
         display: flex;
         font-weight: 500;
         @extend %text;
         letter-spacing: 0.02em;
+        font-size: 12px;
         color: $main-texts-color;
         text-decoration: none;
         align-items: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 
         &:hover {
             color: $hover-texts-color;
@@ -99,7 +209,7 @@
     &__icon {
         fill: $main-texts-color;
         margin-right: 10px;
-    
+
         & {
             fill: currentColor;
             transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
@@ -109,17 +219,25 @@
             }
         }
     }
-    
+
     &__item {
         transition: all cubic-bezier(.1, .53, .86, .42) 0.3s;
+
+        &:first-child {
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 0;
+            }
+        }
+
         &:hover {
             transform: translateY(-10px);
         }
     }
-    
+
 }
 
 .sheets__link:hover>svg {
     fill: $hover-texts-color;
 }
-

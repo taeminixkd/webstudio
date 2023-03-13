@@ -42,7 +42,6 @@ p, h1, h2, h3, h4 {
 }
 
 .footer-sheet__title2, .footer-sheet__title, .form-section__textarea, .work-section__text, .work-section__item, .benefits-section__title, .contacts__email, .contacts__tell, .sheets__link {
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -53,11 +52,6 @@ p, h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   height: inherit;
-}
-.header-sheet__navigation {
-  display: flex;
-  align-items: center;
-  -webkit-box-align: center;
 }
 .header-sheet__logo {
   font-family: "Raleway";
@@ -72,11 +66,126 @@ p, h1, h2, h3, h4 {
   color: #212121;
 }
 
-.sheets {
+.menu-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+  }
+}
+
+.header-button {
+  display: block;
+  margin-left: 275px;
+  background-color: rgba(240, 255, 255, 0);
+  border: none;
+}
+@media screen and (min-width: 490px) {
+  .header-button {
+    margin-left: 285px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .header-button {
+    margin-left: 300px;
+  }
+}
+@media screen and (min-width: 510px) {
+  .header-button {
+    margin-left: 305px;
+  }
+}
+@media screen and (min-width: 520px) {
+  .header-button {
+    margin-left: 320px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .header-button {
+    margin-left: 340px;
+  }
+}
+@media screen and (min-width: 560px) {
+  .header-button {
+    margin-left: 360px;
+  }
+}
+@media screen and (min-width: 580px) {
+  .header-button {
+    margin-left: 375px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .header-button {
+    margin-left: 395px;
+  }
+}
+@media screen and (min-width: 620px) {
+  .header-button {
+    margin-left: 400px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .header-button {
+    margin-left: 420px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .header-button {
+    margin-left: 440px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .header-button {
+    margin-left: 460px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .header-button {
+    margin-left: 485px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .header-button {
+    margin-left: 520px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .header-button {
+    margin-left: 530px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+
+.icon-menu {
   display: flex;
-  justify-content: space-between;
-  width: 290px;
-  margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sheets {
+    display: flex;
+    justify-content: space-between;
+    width: 283px;
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sheets {
+    width: 290px;
+    margin-left: 93px;
+  }
 }
 .sheets__overlay::after {
   content: "";
@@ -102,19 +211,32 @@ p, h1, h2, h3, h4 {
   color: #2196F3;
 }
 
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  width: 333px;
-  margin-left: 309px;
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-left: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 333px;
+    margin-left: 309px;
+  }
 }
 .contacts__tell {
   display: flex;
   font-weight: 500;
+  font-size: 12px;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__tell {
+    font-size: 14px;
+  }
 }
 .contacts__tell:hover {
   color: #2196F3;
@@ -123,9 +245,15 @@ p, h1, h2, h3, h4 {
   display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
+  font-size: 12px;
   color: #757575;
   text-decoration: none;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__email {
+    font-size: 14px;
+  }
 }
 .contacts__email:hover {
   color: #2196F3;
@@ -143,6 +271,14 @@ p, h1, h2, h3, h4 {
 }
 .contacts__item {
   transition: all cubic-bezier(0.1, 0.53, 0.86, 0.42) 0.3s;
+}
+.contacts__item:first-child {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:first-child {
+    margin-bottom: 0;
+  }
 }
 .contacts__item:hover {
   transform: translateY(-10px);
@@ -709,10 +845,6 @@ p, h1, h2, h3, h4 {
   width: 16px;
   height: 15px;
 }
-.form-section__icon {
-  width: 11px;
-  height: 11px;
-}
 .form-section__container:hover > .form-section__icon {
   fill: #2196F3;
   transition: 0.2s;
@@ -759,10 +891,92 @@ p, h1, h2, h3, h4 {
   transition: 0.4s;
 }
 
-.overlay.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: 0.4s;
+  transition: all 0.2s ease-in;
+}
+
+.menu {
+  max-width: 480px;
+  margin: 0 auto;
+  height: 796px;
+  background-color: #fff;
+  padding-left: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu_close {
+  background-color: rgba(240, 255, 255, 0);
+  border: none;
+  margin-top: 21px;
+  margin-bottom: 8.33px;
+  margin-left: 396px;
+  margin-right: 21px;
+}
+
+.sheets-menu {
+  margin-bottom: 306px;
+}
+.sheets-menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: black;
+}
+.sheets-menu__item {
+  margin-bottom: 35px;
+}
+
+.contacts-menu__tell {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.contacts-menu__email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contacts-menu__item:first-child {
+  margin-bottom: 32px;
+}
+
+.menu__social {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu__social:nth-child(1) {
+  margin-left: 0;
+}
+.menu__social:nth-child(4) {
+  margin-right: 0;
+}
+
+.menu__text {
+  margin-top: 64px;
 }
 
 .footer-sheet {
@@ -841,11 +1055,11 @@ p, h1, h2, h3, h4 {
     text-align: start;
   }
 }
-.footer-sheet__mailing-list {
+.footer-sheet__mailinglist {
   padding-top: 12px;
 }
 @media screen and (min-width: 1200px) {
-  .footer-sheet__mailing-list {
+  .footer-sheet__mailinglist {
     padding-top: 12px;
   }
 }

@@ -17,40 +17,49 @@
 
   <!-- секціця хедер -->
 
-  <!-- <header class="header-sheet">
+  <header class="header-sheet">
     <div class="header-sheet__container container">
       <a href="./index.html" class="header-sheet__logo">Web<span class="header-sheet__black">Studio</span></a>
-      <nav class="header-sheet__navigation">
-        <ul class="sheets">
-          <li class="sheets__item">
-            <a href="/" class="sheets__link sheets__overlay">Студія</a>
-          </li>
-          <li class="sheets__item">
-            <a href="./portfolio.html" class="sheets__link">Портфоліо</a>
-          </li>
-          <li class="sheets__item">
-            <a href="/" class="sheets__link">Контакти</a>
-          </li>
-        </ul>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__email">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__tell">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./img/symbol-defs.svg#icon-vector"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <ul class="sheets">
+            <li class="sheets__item">
+              <a href="/" class="sheets__link sheets__overlay">Студія</a>
+            </li>
+            <li class="sheets__item">
+              <a href="./portfolio.html" class="sheets__link">Портфоліо</a>
+            </li>
+            <li class="sheets__item">
+              <a href="/" class="sheets__link">Контакти</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__email">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__tell">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./img/symbol-defs.svg#icon-vector"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button type="button" class="header-button" data-open-menu>
+        <svg class="icon-menu" width="24" height="16">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+  </header>
 
   <!-- секція меін -->
 
@@ -276,7 +285,7 @@
     <!-- секція форма -->
 
     <div class="overlay is-hidden" data-backdrop>
-      <form class="form-section is-hidden">
+      <form class="form-section">
         <h2 class="form-section__title">Залиште свої дані, ми Вам зателефонуємо</h2>
         <button class="form-section__container" type="button" data-close-modal>
           <svg class="form-section__icon" width="11" height="11">
@@ -320,6 +329,10 @@
         <button class="form-section__button" type="submit">Відправити</button>
       </form>
     </div>
+
+      <!-- меню хедера -->
+
+      
   </main>
 
   <!-- секція футер -->
@@ -369,7 +382,7 @@
               </li>
             </ul>
           </li>
-          <div class="footer-sheet__mailing-list">
+          <div class="footer-sheet__mailinglist">
             <h2 class="footer-sheet__title2">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
             <form class="footer-form">
               <input type="email" class="footer-form__field" placeholder="E-mail" required>
@@ -385,32 +398,57 @@
       </div>
     </section>
   </footer>
-  <script>
-    const refs = {
-      openModalBtn: document.querySelector("[data-open-modal]"),
-      closeModalBtn: document.querySelector("[data-close-modal]"),
-      backdrop: document.querySelector("[data-backdrop]"),
-    };
 
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
 
-    refs.backdrop.addEventListener("click", logBackdropClick);
+  <div class="overlay is-hidden" data-backdropmenu>
+    <div class="menu">
+      <button class="menu_close" type="button" data-close-menu>
+        <svg class="menu_icon" width="18.67" height="18.67">
+            <use href="./img/symbol-defs.svg#icon-menu-close"></use>
+        </svg>
+    </button>
+    <ul>
+      <li>
+        <ul class="sheets-menu">
+          <li class="sheets-menu__item">
+            <a href="/" class="sheets-menu__link">Студія</a>
+          </li>
+          <li class="sheets-menu__item">
+            <a href="./portfolio.html" class="sheets-menu__link">Портфоліо</a>
+          </li>
+          <li class="sheets-menu__item">
+            <a href="/" class="sheets-menu__link">Контакти</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="contacts-menu">
+          <li class="contacts-menu__item">
+            <a href="tel:+380961111111" class="contacts-menu__tell">+38 096 111 11 11</a>
+          </li>
+          <li class="contacts-menu__item">
+            <a href="mailto:info@devstudio.com" class="contacts-menu__email">info@devstudio.com</a>
+          </li>
+        </ul>
+        <p class="menu__text">
+          <a href="https://instagram.com" class="menu__social">Instagram</a>
+          |
+          <a href="https://twitter.com" class="menu__social">Twitter</a>
+          |
+          <a href="https://facebook.com" class="menu__social">Facebook</a>
+          |
+          <a href="https://linkedin.com" class="menu__social">LinkedIn</a>
+      </p>
+      </li>
+    </ul>
+    </div>
 
-    function toggleModal() {
-      refs.backdrop.classList.toggle("is-hidden");
-      if (document.body.style.overflow == 'hidden') {
-        document.body.style.overflow = 'visible';
-      }
-      else {
-        document.body.style.overflow = 'hidden';
-      }
-    }
+    
+</div>
 
-    function logBackdropClick() {
-      console.log("Це клік в бекдроп");
-    }
-  </script>
+
+  <script src="./js/hero-modal.js"></script>
+  <script src="./js/menu-modal.js"></script>
 </body>
 
 </html>
