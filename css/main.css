@@ -848,7 +848,12 @@ p, h1, h2, h3, h4 {
 }
 
 .sheets-menu {
-  margin-bottom: 306px;
+  margin-bottom: 250px;
+}
+@media screen and (min-width: 480px) {
+  .sheets-menu {
+    margin-bottom: 306px;
+  }
 }
 .sheets-menu__link {
   font-family: "Roboto";

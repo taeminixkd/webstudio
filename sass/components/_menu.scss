@@ -38,7 +38,11 @@
 }
 
 .sheets-menu {
-    margin-bottom: 306px;
+    margin-bottom: 250px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 306px;
+    }
 
     &__link {
         font-family: 'Roboto';
@@ -78,6 +82,8 @@
 .contacts-menu__item:first-child {
     margin-bottom: 32px;
 }
+
+
 
 .menu__social {
     font-family: 'Roboto';
