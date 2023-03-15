@@ -78,84 +78,9 @@ p, h1, h2, h3, h4 {
 
 .header-button {
   display: block;
-  margin-left: 275px;
+  margin-left: auto;
   background-color: rgba(240, 255, 255, 0);
   border: none;
-}
-@media screen and (min-width: 490px) {
-  .header-button {
-    margin-left: 285px;
-  }
-}
-@media screen and (min-width: 500px) {
-  .header-button {
-    margin-left: 300px;
-  }
-}
-@media screen and (min-width: 510px) {
-  .header-button {
-    margin-left: 305px;
-  }
-}
-@media screen and (min-width: 520px) {
-  .header-button {
-    margin-left: 320px;
-  }
-}
-@media screen and (min-width: 540px) {
-  .header-button {
-    margin-left: 340px;
-  }
-}
-@media screen and (min-width: 560px) {
-  .header-button {
-    margin-left: 360px;
-  }
-}
-@media screen and (min-width: 580px) {
-  .header-button {
-    margin-left: 375px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .header-button {
-    margin-left: 395px;
-  }
-}
-@media screen and (min-width: 620px) {
-  .header-button {
-    margin-left: 400px;
-  }
-}
-@media screen and (min-width: 640px) {
-  .header-button {
-    margin-left: 420px;
-  }
-}
-@media screen and (min-width: 660px) {
-  .header-button {
-    margin-left: 440px;
-  }
-}
-@media screen and (min-width: 680px) {
-  .header-button {
-    margin-left: 460px;
-  }
-}
-@media screen and (min-width: 700px) {
-  .header-button {
-    margin-left: 485px;
-  }
-}
-@media screen and (min-width: 740px) {
-  .header-button {
-    margin-left: 520px;
-  }
-}
-@media screen and (min-width: 750px) {
-  .header-button {
-    margin-left: 530px;
-  }
 }
 @media screen and (min-width: 768px) {
   .header-button {
@@ -210,6 +135,9 @@ p, h1, h2, h3, h4 {
   color: #2196F3;
 }
 
+.contacts {
+  margin-left: 0;
+}
 @media screen and (min-width: 768px) {
   .contacts {
     margin-left: 96px;
