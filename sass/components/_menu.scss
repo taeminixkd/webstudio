@@ -22,6 +22,9 @@
     background-color: #fff;
     padding: 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media screen and (min-width: 480px) {
         max-width: 480px;
@@ -35,15 +38,37 @@
         right: 8px;
         position: absolute;
     }
+
+    &__text {
+        margin-top: 64px;
+    }
+    
+    // &-div {
+    //     outline: solid 2px red;
+    // }
+
+    &__social {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+    }
 }
 
 .sheets-menu {
-    margin-bottom: 250px;
-
-    @media screen and (min-width: 480px) {
-        margin-bottom: 306px;
-    }
-
     &__link {
         font-family: 'Roboto';
         font-style: normal;
@@ -85,25 +110,3 @@
 
 
 
-.menu__social {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: #2196F3;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    &:nth-child(1){
-        margin-left: 0;
-    }
-    &:nth-child(4){
-        margin-right: 0;
-    }
-}
-
-.menu__text {
-    margin-top: 64px;
-}
