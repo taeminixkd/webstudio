@@ -18,7 +18,7 @@
 .menu {
     width: 100%;
     margin: 0 auto;
-    height: 796px;
+    height: 100%;
     background-color: #fff;
     padding: 40px;
     position: relative;
@@ -43,9 +43,9 @@
         margin-top: 64px;
     }
     
-    // &-div {
-    //     outline: solid 2px red;
-    // }
+    &-div {
+        outline: solid 2px red;
+    }
 
     &__social {
         font-family: 'Roboto';

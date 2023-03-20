@@ -429,7 +429,7 @@ img {
 .menu {
   width: 100%;
   margin: 0 auto;
-  height: 796px;
+  height: 100%;
   background-color: #fff;
   padding: 40px;
   position: relative;
@@ -452,6 +452,9 @@ img {
 }
 .menu__text {
   margin-top: 64px;
+}
+.menu-div {
+  outline: solid 2px red;
 }
 .menu__social {
   font-family: "Roboto";
