@@ -440,7 +440,6 @@ img {
 @media screen and (min-width: 480px) {
   .menu {
     max-width: 480px;
-    height: 796px;
   }
 }
 .menu_close {
