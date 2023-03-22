@@ -452,9 +452,6 @@ img {
 .menu__text {
   margin-top: 64px;
 }
-.menu-div {
-  outline: solid 2px red;
-}
 .menu__social {
   font-family: "Roboto";
   font-style: normal;
