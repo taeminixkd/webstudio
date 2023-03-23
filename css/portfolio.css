@@ -576,6 +576,7 @@ img {
 .footer-sheet__title {
   font-weight: 700;
   letter-spacing: 0.03em;
+  font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
 }
