@@ -51,6 +51,7 @@ img {
 
 .header-sheet {
   height: 80px;
+  border: 1px solid #ececec;
 }
 .header-sheet__container {
   display: flex;
@@ -221,7 +222,12 @@ img {
 }
 
 .button-section {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .button-section {
+    padding-top: 94px;
+  }
 }
 
 .but {
@@ -597,6 +603,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  font-size: 14px;
 }
 @media screen and (min-width: 1200px) {
   .footer-sheet__title2 {

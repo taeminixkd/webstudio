@@ -52,6 +52,7 @@ img {
 
 .header-sheet {
   height: 80px;
+  border: 1px solid #ececec;
 }
 .header-sheet__container {
   display: flex;
@@ -280,12 +281,13 @@ img {
 }
 .benefits-section__title {
   font-weight: 700;
+  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
   width: 270px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   .benefits-section__title {
     margin-left: 150px;
   }
@@ -1001,6 +1003,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  font-size: 14px;
 }
 @media screen and (min-width: 1200px) {
   .footer-sheet__title2 {

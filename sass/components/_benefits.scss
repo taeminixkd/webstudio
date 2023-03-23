@@ -13,13 +13,14 @@
 
     &__title {
         font-weight: 700;
+        font-size: 14px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $team-texts-color;
         width: 270px;
         @extend %text;
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 400px) {
             margin-left: 150px;
         }
 
