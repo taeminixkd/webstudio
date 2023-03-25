@@ -52,7 +52,7 @@ img {
 
 .header-sheet {
   height: 80px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-sheet__container {
   display: flex;
@@ -319,6 +319,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .benefits-section__text {
+    margin-bottom: 0;
     width: 270px;
   }
 }
@@ -505,25 +506,22 @@ img {
 .employee__img {
   background: url(4853.jpg);
   width: 100%;
-  height: 75%;
+  height: auto;
   border-radius: 0px;
 }
 @media screen and (min-width: 480px) {
   .employee__img {
     width: 450px;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .employee__img {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .employee__img {
     width: 270px;
-    height: 260px;
   }
 }
 .employee__social {
@@ -833,6 +831,11 @@ img {
   z-index: 2;
   transition: 0.4s;
 }
+@media screen and (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+}
 
 .is-hidden {
   opacity: 0;
@@ -870,12 +873,17 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
   margin-left: 10px;
   margin-right: 10px;
+}
+@media screen and (min-width: 480px) {
+  .menu__social {
+    font-size: 18px;
+  }
 }
 .menu__social:nth-child(1) {
   margin-left: 0;
@@ -888,37 +896,62 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: black;
 }
+@media screen and (min-width: 480px) {
+  .sheets-menu__link {
+    font-size: 40px;
+  }
+}
 .sheets-menu__item {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .sheets-menu__item {
+    margin-bottom: 35px;
+  }
 }
 
 .contacts-menu__tell {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .contacts-menu__tell {
+    font-size: 34px;
+  }
 }
 
 .contacts-menu__email {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 15px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (min-width: 480px) {
+  .contacts-menu__email {
+    font-size: 24px;
+  }
+}
 
 .contacts-menu__item:first-child {
-  margin-bottom: 32px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 480px) {
+  .contacts-menu__item:first-child {
+    margin-bottom: 32px;
+  }
 }
 
 .footer-sheet {
@@ -1003,7 +1036,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-sheet__mailinglist {
-    padding-top: 12px;
+    padding-top: 0;
   }
 }
 .footer-sheet__title2 {
@@ -1058,6 +1091,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-item {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1098,7 +1132,7 @@ img {
   }
 }
 .footer-form__field {
-  width: 100%;
+  width: auto;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
