@@ -439,7 +439,7 @@ img {
 .work-section__item::before {
   content: "Десктопні додатки";
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
   height: 70px;
@@ -841,6 +841,17 @@ img {
   margin-left: 8.38px;
 }
 
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: 0.4s;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -1141,7 +1152,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: auto;
+}
+@media screen and (min-width: 480px) {
+  .footer-form {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
