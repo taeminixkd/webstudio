@@ -230,6 +230,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.15)), url(../img/hero-mobile@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1114,15 +1116,11 @@ img {
     margin-right: 70px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer-item {
-    text-align: left;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-item {
     margin-right: 93px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1168,7 +1166,7 @@ img {
   }
 }
 .footer-form__field {
-  width: auto;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
