@@ -1064,14 +1064,6 @@ img {
     text-align: start;
   }
 }
-.footer-sheet__mailinglist {
-  padding-top: 12px;
-}
-@media screen and (min-width: 1200px) {
-  .footer-sheet__mailinglist {
-    padding-top: 0;
-  }
-}
 .footer-sheet__title2 {
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -1114,6 +1106,16 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-item:first-child {
     margin-right: 70px;
+  }
+}
+.footer-item:last-child {
+  padding-top: 12px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer-item:last-child {
+    padding-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
